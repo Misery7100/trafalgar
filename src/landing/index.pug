@@ -1,16 +1,16 @@
-doctype html
+extends ../constructor.blocks/page-layout/page-layout.pug
 
-html(lang='en')
-    
-    head
-        meta(charset='utf-8')
-        meta(name="description", content='test')
+block variables
 
-    body
-        div.test-container
-            h1 Virtual healthcare <br> for you
+    - var title = 'Trafalgar Medicine';
+    - var description = 'Trafalgar Medicine';
 
-            p Trafalgar provides progressive and affordable <br> healthcare, accessible on mobile and online <br> for everyone
+block container
 
-            button.block-button
-                p.__text Consult today
+    div.test-container
+        h1 Virtual healthcare <br> for you
+
+        p Trafalgar provides progressive and affordable <br> healthcare, accessible on mobile and online <br> for everyone
+
+        button.block-button
+            p.__text Consult today

@@ -2,6 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 // consts
 const PATHS = {
@@ -96,6 +97,11 @@ module.exports = {
 
         new MiniCssExtractPlugin({
             filename: '[name].css'
+        }),
+
+        new FaviconsWebpackPlugin({
+            logo: `${PATHS.src}/assets/favicon/favicon.png`
+        
         })
     
     ]
