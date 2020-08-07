@@ -1,15 +1,14 @@
 const path = require('path')
 const fs = require('fs')
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-
-//const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 // consts
 const PATHS = {
     src: path.join(__dirname, "../src"), 
     dist: path.join(__dirname, "../dist")
 }
-const PAGES_DIR = `${PATHS.src}`
+const PAGES_DIR = `${PATHS.src}/landing`
 // const LANDING = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"));
 const LANDING = fs
     .readdirSync(PAGES_DIR)
@@ -45,6 +44,17 @@ module.exports = {
                     }
                     //{loader: 'pug-loader'}
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {sourceMap: true}
+                    }
+                ]
             }
 
         ]
@@ -54,9 +64,11 @@ module.exports = {
         ...LANDING.map(page => new HtmlWebpackPlugin({
             filename: `./${page.replace(/\.pug/, '.html')}`,
             template: `${PAGES_DIR}/${page}` 
-        }))
-        
+        })),
 
-
+        new MiniCssExtractPlugin({
+            filename: '[name].css'
+        })
+    
     ]
 }
