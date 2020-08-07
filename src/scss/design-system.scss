@@ -59,3 +59,10 @@ p {
     line-height: var(--heading-line-height);
     color: var(--color-text);
 }
+
+a {
+    font-size: var(--text-md);
+    line-height: var(--heading-line-height);
+    text-decoration: none;
+    color: black;
+}

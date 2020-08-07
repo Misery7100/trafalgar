@@ -101,7 +101,6 @@ module.exports = {
 
         new FaviconsWebpackPlugin({
             logo: `${PATHS.src}/assets/favicon/favicon.png`
-        
         })
     
     ]

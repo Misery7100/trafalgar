@@ -1,0 +1,9 @@
+
+
+mixin add-nav(items)
+
+    nav.block-nav-menu
+        ul.__list
+            each item in items
+                li(tabindex=0).__item
+                    a= item

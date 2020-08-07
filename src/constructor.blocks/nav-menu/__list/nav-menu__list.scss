@@ -1,0 +1,10 @@
+.nav-menu__list {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: var(--text-xl);
+    list-style-type: none;
+    white-space: nowrap;
+
+}

@@ -1,0 +1,31 @@
+.nav-menu__item {
+
+    padding: var(--space-xs);
+    padding-bottom: var(--space-sm);
+    margin-right: var(--space-xs);
+    margin-left: var(--space-xs);
+
+    // width: var(--text-md);
+    height: var(--text-xl);
+
+    text-align:center;
+    flex-basis: auto;
+    flex-grow: 1;
+    cursor: pointer;
+    color: black;
+    // background-color: #D4D4D4;
+    transition:all 0.3s ease;
+
+    a {
+        
+    }
+
+    &:hover,
+    &:focus {
+
+        font-weight: bold;
+        box-shadow: inset 0 -5px 0 0 #6FA8F7;
+        font-size: var(--text-md);
+    }
+
+}
