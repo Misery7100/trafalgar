@@ -9,13 +9,12 @@ const PATHS = {
     dist: path.join(__dirname, "../dist")
 }
 const PAGES_DIR = `${PATHS.src}/landing`
-// const LANDING = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith(".pug"));
+
 const LANDING = fs
     .readdirSync(PAGES_DIR)
     .filter(fileName => fileName.endsWith('.pug'))
 
-console.log(LANDING);
-
+// -------------
 module.exports = {
 
     externals: {
@@ -34,18 +33,18 @@ module.exports = {
 
     module: {
         rules: [
-            {
+            {   // Pug
                 test: /\.pug$/,
                 use: [
                     'pug-loader',
                     {
                         loader: 'pug-bem-plain-loader',
-                        options: {b: 'block', m: '--'}
+                        options: {b: 'block-', m: '--'}
                     }
-                    //{loader: 'pug-loader'}
                 ]
             },
-            {
+
+            {   // CSS
                 test: /\.css$/,
                 use: [
                     'style-loader',
@@ -55,10 +54,39 @@ module.exports = {
                         options: {sourceMap: true}
                     }
                 ]
+            },
+
+            {   // SASS
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {sourceMap: true}
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {sourceMap: true}
+                    }
+                ]
+            },
+
+            {   // JavaScript
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {loader: 'babel-loader'}
+            },
+
+            {   // Fonts
+                test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+                loader: 'file-loader',
+                options: {name: '[name].[ext]'}
             }
 
         ]
     },
+
     plugins: [
 
         ...LANDING.map(page => new HtmlWebpackPlugin({

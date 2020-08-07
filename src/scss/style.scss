@@ -1,0 +1,12 @@
+@import '../assets/fonts/Muli/Muli.css';
+@import '../constructor.blocks/button/button.scss';
+@import '../constructor.blocks/button/__text/button__text.scss';
+
+.test-container {
+
+    margin: var(--space-xxl);
+    padding: var(--space-lg);
+    width: max-content;
+    border-radius: var(--space-xl);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
