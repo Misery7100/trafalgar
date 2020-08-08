@@ -1,7 +1,10 @@
 .logo {
-    // display: flex;
-    margin-top: calc(var(--space-xs) * 1.2);
-    margin-right: var(--space-xs);
-    margin-left: var(--space-lg);
+
+    border-radius: 55px;
+    padding-top: calc(var(--space-xs) * 1.35);
+    // margin-right: var(--space-xs);
+    // margin-left: var(--space-lg);
+    // padding-left: var(--space-md);
+    // padding-right: var(--space-md);
     align-items: center;
 }

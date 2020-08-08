@@ -1,9 +1,14 @@
 .nav-menu__list {
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
     white-space: nowrap;
+
+    // ::before {
+    //     content: '';
+    //     font-weight: bold;
+    //     opacity: 0.2;
+    // }
 
 }

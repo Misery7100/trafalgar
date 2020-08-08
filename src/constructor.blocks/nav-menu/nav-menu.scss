@@ -2,8 +2,11 @@
 
     padding-top: var(--space-md);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: calc(var(--text-xxxl) * 1.4);
+    padding-left: 12%;
+    padding-right: 12%;
+
     // flex-wrap: wrap;
     width: 100%;
 }
