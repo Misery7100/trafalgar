@@ -1,5 +1,6 @@
 include ../nav-menu/nav-menu.pug
 include ../section/section.pug
+include ../logo/logo.pug
 
 - var title = 'Virtual healthcare #[br] for you';
 - var text = 'Trafalgar provides progressive and affordable #[br]healthcare, accessible on mobile and online #[br] for everyone';
@@ -8,4 +9,4 @@ include ../section/section.pug
 
 header.block-header
     +add-nav(menu_items)
-    +add-section(title, text, button_text)
+    +add-section(title, text, button_text, button_theme='blue')

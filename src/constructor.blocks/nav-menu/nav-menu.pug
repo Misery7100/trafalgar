@@ -1,9 +1,10 @@
-
+include ../logo/logo.pug
 
 mixin add-nav(items)
 
     nav.block-nav-menu
-        ul.__list
+        +add-logo()
+        div.__list
             each item in items
-                li(tabindex=0).__item
-                    a= item
+                button.__item
+                    p= item
