@@ -1,3 +1,4 @@
+
 .nav-menu {
 
     padding-top: var(--space-md);
@@ -9,4 +10,11 @@
 
     // flex-wrap: wrap;
     width: 76%;
+}
+
+@media (min-width: 1260px) {
+    .nav-menu {
+        animation: transp 0.8s;
+        // margin-right: -1000px;
+    }
 }
