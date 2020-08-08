@@ -9,7 +9,7 @@
     // padding-bottom: var(--space-sm);
     // margin-right: var(--space-xs);
     // margin-left: var(--space-xs);
-
+    border-radius: 55px;
     //???
 
 
@@ -30,6 +30,7 @@
         opacity: 0.5;
         margin-left: var(--space-lg);
         margin-right: var(--space-lg);
+        padding-bottom: var(--space-sm);
 
         font-size: calc(var(--text-base-size) * 1.2);
         font-style: normal;
@@ -42,12 +43,13 @@
     &:hover {
 
         
-        box-shadow: inset 0 -5px 0 0 #6FA8F7;
+        // box-shadow: inset 0 -5px 0 0 #6FA8F7;
         margin-top: var(--space-xs);
         // font-size: var(--text-md);
 
         p {
             opacity: 1;
+            box-shadow: inset 0 -5px 0 0 #6FA8F7;
         }
     }
 
@@ -66,8 +68,10 @@
 
     &:focus{
 
-        outline: none;
-        // need style !!!
+        p {
+            opacity: 1;
+        }
+
 
     }
 }

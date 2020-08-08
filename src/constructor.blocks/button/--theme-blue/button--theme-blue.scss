@@ -2,14 +2,15 @@
 
     background: #458FF6;
 
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
     &:hover{
 
-        background: #FFFFFF;
-        box-shadow: inset 0 0 0 5px var(--color-link);
-        p {
-            color: var(--color-link);
-        }
-    };
+        background: #2B5B9E;
+    }
+
+    &:active{
+
+        // need to setup
+    }
 }
