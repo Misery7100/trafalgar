@@ -2,7 +2,8 @@
 
     background: #458FF6;
 
-    transition: all 0.2s ease;
+    transition: 0.2s ease;
+    transition-property: background, box-shadow;
 
     &:hover{
 

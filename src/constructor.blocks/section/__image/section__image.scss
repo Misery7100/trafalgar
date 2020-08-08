@@ -1,0 +1,15 @@
+.section__image {
+    // display: flex;
+    // opacity: 1;
+    // width: 55.6%;
+
+    // transition: all 1.5s ease;
+}
+
+@media (max-width: 1259px) {
+
+    .section__image {
+        // opacity: 0;
+        width: 65%;
+    }
+}

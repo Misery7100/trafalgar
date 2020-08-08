@@ -1,16 +1,3 @@
+//- include ../text-section/text-section.pug
 
-
-mixin add-section(title='Sample title', text='Sample text', button_text, button_theme)
-
-    div.block-section
-        h1.__title= title
-
-        p.__text= text
-
-        if button_text
-            if button_theme == 'blue'
-                button(type='button').block-button.-theme-blue
-                    p.__text= button_text
-            else
-                button(type='button').block-button
-                    p.__text= button_text
+//- mixin add-section()

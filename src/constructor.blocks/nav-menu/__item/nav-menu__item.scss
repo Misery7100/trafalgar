@@ -5,15 +5,13 @@
     font: inherit;
     color: inherit;
     background-color: transparent;
-    // padding: var(--space-xs);
-    // padding-bottom: var(--space-sm);
-    // margin-right: var(--space-xs);
-    // margin-left: var(--space-xs);
+
     border-radius: 55px;
     //???
-
+    width: 8em;
     height: calc(var(--text-xl) * 2.1);
-    
+    display: flex;
+    justify-content: center;
 
     font-weight: normal;
 
@@ -26,13 +24,14 @@
     -webkit-backface-visibility: hidden;
 
     p {
-        width: 6em;
+        // width: 6em;
+        width: auto;
         color: #1F1534;
         opacity: 0.5;
-        margin-left: calc(var(--space-xs) * 0.4);
-        margin-right: calc(var(--space-xs) * 0.4);
-        padding-left: var(--space-xs);
-        padding-right: var(--space-xs);
+        margin-left: calc(var(--space-xs) * 0.5);
+        margin-right: calc(var(--space-xs) * 0.5);
+        // padding-left: calc(var(--space-xs));
+        // padding-right: calc(var(--space-xs));
         padding-bottom: var(--space-sm);
         // background-color: #D67AA4;
 

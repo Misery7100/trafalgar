@@ -4,11 +4,18 @@
     flex-flow: row wrap;
     justify-content: space-around;
     white-space: nowrap;
-
+    // background-color: #24AFFF;
+    width: calc(var(--space-xxxl) * 5);
     // ::before {
     //     content: '';
     //     font-weight: bold;
     //     opacity: 0.2;
     // }
 
+}
+
+@media (max-width: 1259px) {
+    .nav-menu__list {
+        display: none;
+    }
 }

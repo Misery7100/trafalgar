@@ -1,6 +1,4 @@
-// import headerPic from './img/header-pic.png';
+import headerPic from './img/header-pic.png';
 
-// var test = headerPic;
+let element = document.querySelector('test');
 
-// var testImg = document.getElementById('test');
-// testImg.src = headerPic;

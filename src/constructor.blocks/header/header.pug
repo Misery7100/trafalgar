@@ -1,5 +1,5 @@
 include ../nav-menu/nav-menu.pug
-include ../section/section.pug
+include ../text-section/text-section.pug
 include ../logo/logo.pug
 
 - var title = 'Virtual healthcare #[br] for you';
@@ -7,14 +7,15 @@ include ../logo/logo.pug
 - var button_text = 'Consult today';
 - var menu_items = ['Home', 'Find a doctor', 'Apps', 'Testimonials','About us'];
 
+- var image_path = './src/constructor.blocks/header/img/header-pic.png';
+
 header.block-header
+
     +add-nav(menu_items)
-    +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section('Test', 'test')
-    //- +add-section(title, text)
-    //- +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section(title, text, button_text, button_theme='blue')
-    //- +add-section(title, text, button_text, button_theme='blue')
+
+    div.block-section
+        +add-text-section(title, text, button_text, button_theme='blue')
+        img(src=image_path)._image
+    div.block-section
+        +add-text-section(title, text, button_text, button_theme='blue')
+        img(src=image_path)._image
