@@ -28,7 +28,7 @@ module.exports = {
 
     output: {
         path: PATHS.dist,
-        //publicPath: '/dist',
+        // publicPath: '/static/',
         filename: 'main.js'
     },
 
@@ -83,7 +83,13 @@ module.exports = {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader',
                 options: {name: '[name].[ext]'}
-            }
+            },
+
+            {   // Images
+                test:/\.(jp?g|png|svg)$/,
+                loader: 'file-loader',
+                options: {name: 'images/[name].[ext]'} 
+            },
 
         ]
     },

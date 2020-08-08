@@ -1,9 +1,7 @@
 .logo {
-
-    padding: var(--space-xs);
-    padding-bottom: var(--space-sm);
+    // display: flex;
+    margin-top: calc(var(--space-xs) * 1.2);
     margin-right: var(--space-xs);
-    margin-left: var(--space-xs);
-
-    height: var(--text-xl);
+    margin-left: var(--space-lg);
+    align-items: center;
 }

@@ -1,6 +1,9 @@
 .nav-menu {
+
     padding-top: var(--space-md);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: calc(var(--text-xxxl) * 1.4);
+    // flex-wrap: wrap;
     width: 100%;
 }
