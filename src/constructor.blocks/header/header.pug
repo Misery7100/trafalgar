@@ -2,8 +2,8 @@ include ../nav-menu/nav-menu.pug
 include ../text-section/text-section.pug
 include ../logo/logo.pug
 
-- var title = 'Virtual healthcare #[br] for you';
-- var text = 'Trafalgar provides progressive and affordable #[br]healthcare, accessible on mobile and online #[br] for everyone';
+- var title = 'Virtual healthcare for you';
+- var text = 'Trafalgar provides progressive and affordable healthcare, accessible on mobile and online for everyone';
 - var button_text = 'Consult today';
 - var menu_items = ['Home', 'Find a doctor', 'Apps', 'Testimonials','About us'];
 
@@ -15,4 +15,5 @@ header.block-header
 
     div.block-section
         +add-text-section(title, text, button_text, button_theme='blue')
-        img(src=image_path)._image
+        div._image
+            img(src=image_path)

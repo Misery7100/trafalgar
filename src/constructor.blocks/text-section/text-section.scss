@@ -5,9 +5,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
+    // Need to fix that shit :/
+    width: 27%;
+
     // margin: calc(var(--space-lg) * 2);
     padding: calc(var(--space-lg) * 2);
-    width: max-content;
+    // width: max-content;
     border-radius: var(--space-xl);
 
     font-size: calc(var(--text-md) * 0.95);
@@ -15,10 +18,11 @@
     // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-@media (max-width: 1259px) {
+@media (max-width: 1070px) {
 
     .text-section {
-        margin: var(--space-sm);
-        // font-size: var(--text-sm);
+        // margin: var(--space-sm);
+        width: 80%;
     }
 }
+

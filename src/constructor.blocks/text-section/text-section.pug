@@ -1,6 +1,6 @@
 
 
-mixin add-text-section(title='Sample title', text='Sample text', button_text, button_theme, image_path)
+mixin add-text-section(title='Sample title', text='Sample text', button_text, button_theme)
 
     div.block-text-section
         h1.__title= title
@@ -15,6 +15,3 @@ mixin add-text-section(title='Sample title', text='Sample text', button_text, bu
             else
                 a(href='').block-button
                     p.__text= button_text
-
-        if image_path
-            img(src=image_path)

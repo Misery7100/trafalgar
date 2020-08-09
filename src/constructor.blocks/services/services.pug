@@ -3,22 +3,22 @@ include ../service-card/service-card.pug
 - 
     var services = {
                     'Search doctor' : {'search-doctor.svg' : 
-                    'Choose your doctor from thousands #[br]of specialist, general, and trusted #[br]hospitals'},
+                    'Choose your doctor from thousands of specialist, general, and trusted hospitals'},
 
                     'Online pharmacy': {'online-pharmacy.svg' :
-                    'Buy  your medicines with our #[br]mobile application with a simple #[br]delivery system'},
+                    'Buy  your medicines with our mobile application with a simple delivery system'},
 
                     'Consultation' : {'consultation.svg' :
-                    'Free consultation with our trusted #[br]doctors and get the best #[br]recomendations'},
+                    'Free consultation with our trusted doctors and get the best recomendations'},
 
                     'Details info' : {'details-info.svg' :
-                    'Free consultation with our trusted #[br]doctors and get the best #[br]recomendations'},
+                    'Free consultation with our trusted doctors and get the best recomendations'},
 
                     'Emergency care' : {'emergency-care.svg' :
-                    'You can get 24/7 urgent care for #[br]yourself or your children and your #[br]lovely family'},
+                    'You can get 24/7 urgent care for yourself or your children and your lovely family'},
 
                     'Tracikng' : {'tracking.svg' :
-                    'Track and save your medical history #[br]and health data'}
+                    'Track and save your medical history and health data'}
                 };
 
 
@@ -27,6 +27,7 @@ div.block-services
 
     div.block-section
     
-    each additional, title in services
-        each text, pic in additional
-            +add-service(pic, title, text)
+    div._cards
+        each additional, title in services
+            each text, pic in additional
+                +add-service(pic, title, text)

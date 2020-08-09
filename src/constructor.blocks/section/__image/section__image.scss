@@ -1,11 +1,14 @@
 .section__image {
 
     // height: 70vmin;
-    // // display: flex;
+    display: flex;
     // // opacity: 1;
-    // width: auto;
-
+    padding: calc(var(--space-lg) * 2);
     // transition: all 1.5s ease;
+
+    img {
+        width: 100%;
+    }
 }
 
 // @media (max-width: 1259px) {

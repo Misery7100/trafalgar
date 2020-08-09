@@ -4,6 +4,7 @@ mixin add-service(pic, title, text)
     - var path = './src/constructor.blocks/services/img/' + pic;
 
     div.block-service-card
-        img(src=path)._pic
+        div._pic
+            img(src=path)
         h3._title= title
         p._text= text
