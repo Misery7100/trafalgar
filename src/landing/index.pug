@@ -1,6 +1,9 @@
 extends ../constructor.blocks/page-layout/page-layout.pug
 include ../constructor.blocks/text-section/text-section.pug
 
+
+
+
 block variables
 
     - var title = 'Trafalgar Medicine';
@@ -8,6 +11,4 @@ block variables
 
 block container
 
-    div.block-section
-        +add-text-section(title, text, button_text, button_theme='blue')
-    //- img(src=image_path)._image
+    include ../constructor.blocks/services/services.pug
