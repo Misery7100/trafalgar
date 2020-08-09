@@ -7,6 +7,9 @@ const devConfig = merge(baseConfig, {
 
     devServer: {
         overlay: true,
+        // Remove disableHostCheck!!!
+        disableHostCheck: true
+
     }
 })
 

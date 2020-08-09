@@ -13,21 +13,24 @@
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: calc(var(--space-xxl) * 1.1);
-    margin-bottom: calc(var(--space-xxl) * 1.1);
+    justify-content: center;
+    // margin-top: calc(var(--space-xs) * 0.1);
+    margin-bottom: var(--space-xl);
     align-items: center;
-    transition: margin-top 1s ease;
+    align-content: flex-start;
+    width: 100%;
+    // transition: margin-top 1s ease;
 
 }
 
-@media (max-width: 1259px) {
+@media (max-width: 1259px), (orientation: portrait)  {
 
     .section {
 
         flex-flow: column-reverse wrap;
+        justify-content: center;
         animation: transp 1s;
-        margin-top: calc(var(--space-xl));
+        // margin-top: calc(var(--space-xs) * 0.2);
 
     }
 }
@@ -38,3 +41,7 @@
         animation: tratra 1s;
     }
 }
+
+@media (orientation: portrait) {}
+
+@media (orientation: landscape) {}

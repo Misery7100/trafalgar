@@ -1,11 +1,13 @@
 .button__text {
 
-    margin-left: var(--space-lg);
-    margin-right: var(--space-lg);
+    margin-left: calc(var(--space-sm) * 3);
+    margin-right: calc(var(--space-sm) * 3);
 
-    font-size: calc(var(--text-base-size) * 1.2);
+    font-size: calc(var(--text-base-size) * 1.4);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
+
+    // background-color: #1024FA;
     
 }

@@ -1,8 +1,9 @@
 .header {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-size: var(--text-base-size);
+    height: 100vh;
     // padding: var(--space-md);
 }

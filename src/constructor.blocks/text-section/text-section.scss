@@ -5,10 +5,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
 
-    margin: var(--space-lg);
-    padding: var(--space-lg);
+    // margin: calc(var(--space-lg) * 2);
+    padding: calc(var(--space-lg) * 2);
     width: max-content;
     border-radius: var(--space-xl);
+
+    font-size: calc(var(--text-md) * 0.95);
     // transition: all 1.0s ease;
     // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -17,6 +19,6 @@
 
     .text-section {
         margin: var(--space-sm);
-        font-size: var(--text-sm);
+        // font-size: var(--text-sm);
     }
 }

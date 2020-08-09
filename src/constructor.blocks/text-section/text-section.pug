@@ -9,11 +9,11 @@ mixin add-text-section(title='Sample title', text='Sample text', button_text, bu
 
         if button_text
             if button_theme == 'blue'
-                button(type='button').block-button.-theme-blue
+                a(href='').block-button.-theme-blue
                     p.__text= button_text
 
             else
-                button(type='button').block-button
+                a(href='').block-button
                     p.__text= button_text
 
         if image_path
