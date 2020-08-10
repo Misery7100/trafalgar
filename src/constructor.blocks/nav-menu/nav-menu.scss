@@ -1,14 +1,19 @@
 
 .nav-menu {
 
-    padding-top: var(--space-md);
+    /* padding-top: var(--space-md); */
+
     display: flex;
     justify-content: space-between;
-    height: calc(var(--text-xxxl) * 1.4);
-    margin-left: 12%;
-    margin-right: 12%;
 
-    // flex-wrap: wrap;
+    /* Need to setup height (for fixing layout)
+    
+    // height: calc(var(--text-xxxl) * 1.4);
+    // margin-left: 12%;
+    // margin-right: 12%;
+
+    // flex-wrap: wrap; */
+
     width: 76%;
 }
 

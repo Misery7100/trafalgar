@@ -21,13 +21,13 @@
     --space-xs:   0.5em;
     --space-sm:   0.75em;
     --space-md:   1.25em;
-    --space-lg:   2em;
+    --space-lg:   2.25em;
     --space-xl:   3.25em;
     --space-xxl:  5.25em;
     --space-xxxl: 8.5em;
     // set base values
     --text-base-size: 1em;
-    --text-scale-ratio: 1.25;
+    --text-scale-ratio: 1.26;
 
     // type scale
     --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
@@ -46,23 +46,23 @@ html {
 body {
 
     font-family: 'Muli', 'Arial', var(--font-primary);
-    font-size: var(--text-base-size);
+    
 }
 
 h1 {
     line-height: calc(var(--heading-line-height) / 1.5);
-    font-size: var(--text-xxxl);
+    /* font-size: var(--text-xxxl); */
     color: var(--color-title);
 }
 
 p {
-    font-size: var(--text-md);
+    
     line-height: var(--heading-line-height);
     color: var(--color-text);
 }
 
 a {
-    font-size: var(--text-md);
+    /* font-size: var(--text-md); */
     line-height: var(--heading-line-height);
     text-decoration: none;
     color: black;

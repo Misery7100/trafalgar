@@ -1,11 +1,17 @@
 .logo {
 
-    border-radius: 55px;
-    padding-top: calc(var(--space-xs) * 1.35);
-    // margin-right: 3em;
-    margin-right: var(--space-lg);
+    display: flex;
+    align-items: center;
+    // border-radius: 55px;
+    
+    /* padding-top: calc(var(--space-xs) * 1.35); */
+    
+    /* margin-right: var(--space-lg); */
+
+    // ???????
     // margin-left: var(--space-lg);
     // padding-left: var(--space-md);
     // padding-right: var(--space-md);
-    align-items: center;
+    
+    
 }

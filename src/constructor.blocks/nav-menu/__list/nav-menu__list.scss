@@ -6,18 +6,14 @@
     justify-content: space-around;
     white-space: nowrap;
     // background-color: #24AFFF;
-    width: calc(var(--space-xxxl) * 5);
-    // ::before {
-    //     content: '';
-    //     font-weight: bold;
-    //     opacity: 0.2;
-    // }
+    /* width: calc(var(--space-xxxl) * 5); */
+
     transition: margin-right 0.7s ease-out;
 }
 
-@media (max-width: 1259px) {
-    .nav-menu__list {
-        // margin-right: -1000px;
-        display: none;
-    }
-}
+// @media (max-width: 1259px) {
+//     .nav-menu__list {
+//         // margin-right: -1000px;
+//         display: none;
+//     }
+// }
