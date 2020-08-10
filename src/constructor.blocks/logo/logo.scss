@@ -3,12 +3,13 @@
     /* Flex model */
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    height: inherit;
 
     /* Need to check */
 
     // border-radius: 55px;
-    // padding-top: calc(var(--space-xs) * 1.35);
+    padding-bottom: calc(4.6px);
     // margin-right: var(--space-lg);
 
     // ???????

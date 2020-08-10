@@ -8,12 +8,13 @@ include ../logo/logo.pug
 - var menu_items = ['Home', 'Find a doctor', 'Apps', 'Testimonials','About us'];
 
 - var image_path = './src/constructor.blocks/header/img/header-pic.png';
+- var button_link = '#';
 
 header.block-header
 
     +add-nav(menu_items)
 
     section.block-section
-        +add-text-section(title, text, button_text, button_theme='blue')
+        +add-text-section(title, text, button_text, button_link, button_theme='blue')
         div._image
             img(src=image_path, alt='Virtual healthcare for you - Trafalgar')

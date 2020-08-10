@@ -4,7 +4,7 @@
 
     font: {
         
-        size: calc(var(--text-base-size) * 1.4);
+        size: var(--button-text-size);
         style: normal;
         weight: 600;
     }

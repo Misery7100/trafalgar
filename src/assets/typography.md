@@ -1,7 +1,7 @@
 # Typography #
 
 Correct font size for nav-menu: `1.26 * 1.26 = 1.588 em`  
-That's equal to 18px.
+That's equal to 24px.!!!!!!!
 
 Font in design layout:
 
@@ -11,7 +11,7 @@ Font in design layout:
 
     - text: 21px Light;
     - title: 48px Bold;
-    - button: 21px Bold;
+    - button: 18px Bold;
 
 - Services 
 

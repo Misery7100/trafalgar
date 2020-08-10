@@ -1,19 +1,56 @@
 :root {
 
-    // --baseline: 20px;
-    --font-primary: sans-serif;
-    --heading-line-height: 1.5;
-    --body-line-height: 1.4;
     // spacing values
     // --space-sm:   calc(var(--baseline)/2);
     // --space-md:   var(--baseline);
     // --space-lg:   calc(var(--baseline)*2);
     // --space-xl:   calc(var(--baseline)*3);
 
-    // colors
-    --color-text: #7D7987;
+    /* ---------------------------- Typography ----------------------------- */
+
+    --font-primary: sans-serif;
+    --font-base-size: 1.2em;                                            // 18px
+    --main-line-height: 1;
+
+    // Titles
+
+    --title-base-size: calc(var(--font-base-size) * var(--title-scale));// 24px
+    --title-scale: 1.4;
     --color-title: #000000;
+    --title-line-height: calc(var(--main-line-height) * 1.15);
+
+    --title-md: var(--title-base-size);                                 // 24px
+    --title-lg: calc(var(--title-md) * var(--title-scale));             // 36px
+    --title-xl: calc(var(--title-lg) * var(--title-scale));             // 48px
+
+    --title-rmd: calc(var(--font-base-size) * var(--text-size));  // additional
+
+    // Text
+
+    --text-base-size: var(--font-base-size);                            // 18px
+    --text-scale: 1.13;
+    --color-text: #7D7987;
+    --text-line-height: calc(var(--main-line-height) * 1.5);
+
+    --text-sm: calc(var(--text-base-size) / var(--text-scale));         // 16px
+    --text-md: var(--text-base-size);                                   // 18px
+    --text-lg: calc(var(--text-md) * var(--text-scale));                // 21px
+
+    // Interactive elements
+    
+    --menu-text-size: var(--font-base-size);                            // 18px
+    --button-text-size: var(--font-base-size);                          // 18px
     --color-link: #4089ED;
+
+    /* ------------------------------ Spacing ------------------------------ */
+
+    // 8px ~ 0.535 em ~~ 0.55 em ? 
+    // nav from top: 56 px = 1.15*1.4*1.4*1.4*1.2 = 3.85em | Needed 40px = 2.75em
+    // between menu items: 43px = ?
+    // between cards horizontally and vertically 34px ~ 2.25em
+    // padding left at service card: 40px = 2.75em
+    // padding top at service card: 36px ~ 2.25em
+    // button paddings: 40px = 2.75em
 
     // spacing from em
     --space-xxxs: 0.25em;
@@ -25,18 +62,8 @@
     --space-xl:   3.25em;
     --space-xxl:  5.25em;
     --space-xxxl: 8.5em;
-    // set base values
-    --text-base-size: 1em;
-    --text-scale-ratio: 1.26;
+    
 
-    // type scale
-    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
-    --text-sm: calc(1em / var(--text-scale-ratio));
-    --text-md: calc(1em * var(--text-scale-ratio));
-    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
-    --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 }
 
 html {
@@ -49,21 +76,21 @@ body {
     
 }
 
-h1 {
-    line-height: calc(var(--heading-line-height) / 1.5);
-    /* font-size: var(--text-xxxl); */
+h1, h2, h3 {
+
+    line-height: var(--title-line-height);
     color: var(--color-title);
 }
 
 p {
     
-    line-height: var(--heading-line-height);
+    line-height: var(--text-line-height);
     color: var(--color-text);
 }
 
 a {
-    /* font-size: var(--text-md); */
-    line-height: var(--heading-line-height);
+
+    line-height: var(--text-line-height);
     text-decoration: none;
-    color: black;
+    color: var(--color-link);
 }

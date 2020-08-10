@@ -1,6 +1,6 @@
 
 
-mixin add-text-section(title='Sample title', text='Sample text', button_text, button_theme)
+mixin add-text-section(title='Sample title', text='Sample text', button_text, button_link, button_theme)
 
     div.block-text-section
         h1.__title= title
@@ -9,7 +9,7 @@ mixin add-text-section(title='Sample title', text='Sample text', button_text, bu
 
         if button_text
             if button_theme == 'blue'
-                a(href='').block-button.-theme-blue
+                a(href=button_link).block-button.-theme-blue
                     p.__text= button_text
 
             else
