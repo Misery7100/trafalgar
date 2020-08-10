@@ -3,26 +3,16 @@
 _spaces mean margins and paddings_
 
 + button__text  - - - - - - - - `spaces`
-+ logo                  
-    - `spaces`
-+ nav-menu              
-    - `spaces, height (in --text-var - WTF?!)`
-+ nav-menu__list        
-    - `width`
-+ nav-menu__item        
-    - `height (in --text), a lot of spaces`
-+ section               
-    - `spaces (margin-bottom)`
-+ section__image        
-    - `spaces`
-+ text-section          
-    - `font-size, spaces`
-+ service-card          
-    - `width, height, spaces`
-+ service-card__title   
-    - `font-size`
-+ service-card__pic     
-    - `spaces (but margin is correct)`
++ logo  - - - - - - - - - - - - `spaces`
++ nav-menu  - - - - - - - - - - `spaces, height (in --text-var - WTF?!)`
++ nav-menu__list  - - - - - - - `width`
++ nav-menu__item  - - - - - - - `height (in --text), a lot of spaces`
++ section - - - - - - - - - - - `spaces (margin-bottom)`
++ section__image  - - - - - - - `spaces`
++ text-section  - - - - - - - - `font-size, spaces`
++ service-card  - - - - - - - - `width, height, spaces`
++ service-card__title - - - - - `font-size`
++ service-card__pic - - - - - - `spaces (but margin is correct)`
 
 _also disabled some properties in design-system.scss_
 
