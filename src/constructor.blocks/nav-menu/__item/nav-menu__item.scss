@@ -2,7 +2,9 @@
 
     /* Flex model */
 
+    display: flex;
     padding: 0;
+    justify-content: center;
     // padding-left: calc(var(--space-md) / 16 * 5);
     // padding-right: calc(var(--space-md) / 16 * 5);
     // margin-left: calc(var(--space-md) / 16 * 3);
