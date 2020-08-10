@@ -2,7 +2,7 @@
 
 _spaces mean margins and paddings_
 
-+ button__text          - spaces
++ button__text          - `spaces`
 + logo                  - spaces
 + nav-menu              - spaces, height (in --text-var - WTF?!)
 + nav-menu__list        - width
@@ -18,8 +18,7 @@ _also disabled some properties in design-system.scss_
 
 ---
 
-Need to sort CSS properties according to pattern
-Need to create media and animation templates :/
+Need to sort CSS properties according to pattern. Need to create media and animation templates :/
 
 ---
 
