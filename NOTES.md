@@ -2,8 +2,7 @@
 
 _spaces mean margins and paddings_
 
-+ button__text          
-    - `spaces`
++ button__text  - - - - - - - - `spaces`
 + logo                  
     - `spaces`
 + nav-menu              
@@ -48,7 +47,7 @@ Need to sort CSS properties according to pattern. Need to create media and anima
   left: 0;
   z-index: 100;
 
-  // Flex/Block model -->
+  // Flex or Block model -->
 
   display: flex;
   width: 100px;
