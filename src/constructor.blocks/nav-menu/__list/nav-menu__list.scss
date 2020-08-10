@@ -8,6 +8,7 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
+    width: var(--menu-list-width);
 
     /* Typographic */
 
@@ -21,6 +22,7 @@
     /* For debug mode */
 
     // background-color: #24AFFF;
+
 }
 
 // @media (max-width: 1259px) {

@@ -23,7 +23,7 @@
     --title-lg: calc(var(--title-md) * var(--title-scale));             // 36px
     --title-xl: calc(var(--title-lg) * var(--title-scale));             // 48px
 
-    --title-rmd: calc(var(--font-base-size) * var(--text-size));  // additional
+    --title-rmd: calc(var(--font-base-size) * var(--text-scale)); // additional
 
     // Text
 
@@ -44,6 +44,17 @@
 
     /* ------------------------------ Spacing ------------------------------ */
 
+    --space-factor: 0.55em;
+
+    --space-sm: calc(var(--space-factor) * 4);
+    --space-md: calc(var(--space-factor) * 5);
+    --space-xl: calc(var(--space-factor) * 8);
+    --space-section: calc(var(--space-factor) * 26);
+
+    /* ----------------------------- Flex model ---------------------------- */
+
+    --menu-list-width: 39em;
+
     // 8px ~ 0.535 em ~~ 0.55 em ? 
     // nav from top: 56 px = 1.15*1.4*1.4*1.4*1.2 = 3.85em | Needed 40px = 2.75em
     // between menu items: 43px = ?
@@ -51,17 +62,9 @@
     // padding left at service card: 40px = 2.75em
     // padding top at service card: 36px ~ 2.25em
     // button paddings: 40px = 2.75em
+    // from nav to header-section: ~ 4.4em
 
-    // spacing from em
-    --space-xxxs: 0.25em;
-    --space-xxs:  0.375em;
-    --space-xs:   0.5em;
-    --space-sm:   0.75em;
-    --space-md:   1.25em;
-    --space-lg:   2.25em;
-    --space-xl:   3.25em;
-    --space-xxl:  5.25em;
-    --space-xxxl: 8.5em;
+    
     
 
 }

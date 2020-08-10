@@ -1,12 +1,17 @@
 .button {
 
     /* Flex model */
+    display: flex;
+    align-items: center;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+    height: calc(var(--button-text-size) * 3);
 
     /* Typographic */
 
     white-space: nowrap;
     text-decoration: none;
-    line-height: 1;
+    font-size: var(--button-text-size);
 
     /* Decor */
 
@@ -16,6 +21,7 @@
     /* Other */
 
     cursor: pointer;
+    user-select: none;
 
      /* Need to check */ 
 

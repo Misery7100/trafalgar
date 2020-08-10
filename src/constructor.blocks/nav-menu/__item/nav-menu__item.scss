@@ -2,15 +2,17 @@
 
     /* Flex model */
 
-    padding: 0;
-    display: inline-block; // ???
+    padding-left: calc(var(--space-md) / 16 * 5);
+    padding-right: calc(var(--space-md) / 16 * 5);
+    margin-left: calc(var(--space-md) / 16 * 3);
+    margin-right: calc(var(--space-md) / 16 * 3);
     
     /* Typographic */
 
     font: {
 
         family: inherit;
-        size: var(--menu-text-size); // temporary //
+         // temporary //
         weight: normal;
     }
 
@@ -29,13 +31,12 @@
     /* Other */
 
     cursor: pointer;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     /* Need to check */
 
     // Move nav-menu__item width into root variables
     // width: 8em;
-    // height: calc(var(--text-xl) * 2.1);
 
     /* For debug mode */
 
@@ -48,12 +49,17 @@
         /* Flex model */
 
         width: auto;
+        margin: 0;
+        padding-bottom: calc(var(--menu-text-size) / 3);
+        padding-top: calc(var(--menu-text-size) / 3);
 
         /* Typographic */
 
+        
         color: #1F1534;
         font-style: normal;
         text-align: center;
+        font-size: var(--menu-text-size);
 
         /* Decor */
 
@@ -65,8 +71,6 @@
 
         /* Need to check */
 
-        /* margin-left: calc(var(--space-xs) * 0.5);
-        // margin-right: calc(var(--space-xs) * 0.5);
         // padding-bottom: var(--space-sm); */
         // font-size: calc(var(--text-base-size) * 1.2);
 

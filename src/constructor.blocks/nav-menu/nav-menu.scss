@@ -8,12 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: calc(var(--menu-text-size) * 3.5);
     width: 76%;
+    margin-top: var(--space-md);
+
+    /* Other */
+
+    user-select: none;
     
 
     /* Need to check */
 
-    // height: calc(var(--text-xxxl) * 1.4);
     // margin-left: 12%;
     // margin-right: 12%;
 

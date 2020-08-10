@@ -5,7 +5,9 @@
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: flex-start;
-    width: 27%; // ???????/
+    height: 100%;
+
+    // width: 27%; // ???????/
 
     // Need to fix that shit :/
     
@@ -22,7 +24,7 @@
 
     .text-section {
         // margin: var(--space-sm);
-        width: 80%;
+        // width: 80%;
     }
 }
 
