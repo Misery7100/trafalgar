@@ -1,6 +1,6 @@
 ## Disabled root vars
 
-> spaces mean margins and paddings
+_spaces mean margins and paddings_
 
 + button__text          - spaces
 + logo                  - spaces
@@ -14,10 +14,10 @@
 + service-card__title   - font-size
 + service-card__pic     - spaces (but margin is correct)
 
-> also disabled some properties in design-system.scss
+_also disabled some properties in design-system.scss_
 
->> Need to sort CSS properties according to pattern
->> Need to create media and animation templates :/
+Need to sort CSS properties according to pattern
+Need to create media and animation templates :/
 
 ### CSS sorting pattern
 
@@ -65,7 +65,7 @@
   animation: ...;
 
   // Other -->
-  
+
   will-change: auto;
 }
 
