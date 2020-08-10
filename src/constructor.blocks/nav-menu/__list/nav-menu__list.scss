@@ -1,14 +1,12 @@
 .nav-menu__list {
 
-    /* NEED TO FIX WIDTH TO AVOID LOGO MOVING */
-
     /* Flex model */
 
-    display: flex;
+    display: inline-flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: var(--menu-list-width);
+    width: 37em;
 
     /* Typographic */
 

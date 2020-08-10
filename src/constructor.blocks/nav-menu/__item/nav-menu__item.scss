@@ -3,20 +3,15 @@
     /* Flex model */
 
     display: flex;
-    padding: 0;
     justify-content: center;
-    // padding-left: calc(var(--space-md) / 16 * 5);
-    // padding-right: calc(var(--space-md) / 16 * 5);
-    // margin-left: calc(var(--space-md) / 16 * 3);
-    // margin-right: calc(var(--space-md) / 16 * 3);
-    width: 8em;
+    padding-left: calc(var(--space-md) / 16 * 5);
+    padding-right: calc(var(--space-md) / 16 * 5);
     
     /* Typographic */
 
     font: {
 
         family: inherit;
-         // temporary //
         weight: normal;
     }
 
@@ -25,7 +20,7 @@
     /* Decor */
 
     border: none;
-    border-radius: 55px;
+    border-radius: 15px;
     background-color: transparent;
 
     /* Animation */
@@ -36,11 +31,6 @@
 
     cursor: pointer;
     backface-visibility: hidden;
-
-    /* Need to check */
-
-    // Move nav-menu__item width into root variables
-    // width: 8em;
 
     /* For debug mode */
 
@@ -53,8 +43,11 @@
         /* Flex model */
 
         width: auto;
-        padding-bottom: calc(var(--menu-text-size) / 3);
-        padding-top: calc(var(--menu-text-size) / 3);
+        padding-bottom: 0;
+        padding-top: 0;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
 
         /* Typographic */
 
@@ -70,12 +63,7 @@
 
         /* Animation */
 
-        transition: all 0.2s ease;
-
-        /* Need to check */
-
-        // padding-bottom: var(--space-sm); */
-        // font-size: calc(var(--text-base-size) * 1.2);
+        transition: all 0.3s ease;
 
         /* For debug mode */
 
@@ -90,13 +78,12 @@
 
     &:hover {
 
-        /* Custom space ??? 
-        // margin-top: var(--space-xs);*/
-        
         p {
 
             opacity: 1;
             box-shadow: inset 0 -5px -0 0 #6FA8F7;
+            padding-bottom: calc(var(--menu-text-size) / 2.5);
+            padding-top: calc(var(--menu-text-size) / 2.5);
         }
     }
 
@@ -107,7 +94,16 @@
         p {
             
             opacity: 1;
+            font-size: calc(var(--menu-text-size) * 1.3);
+            // box-shadow: inset 0 -7px -0 0 #FEAEDD;
+            box-shadow: inset 0 -7px -0 0 #FFFFFF;
+            padding-bottom: calc(var(--menu-text-size) / 2.5);
+            padding-top: calc(var(--menu-text-size) / 2.5);
             font-weight: bold;
+
+            margin-top: calc((1em / 1.3) - var(--menu-text-size) / 2.5);
+            margin-bottom: calc((1em / 1.3) - var(--menu-text-size) / 2.5);
+
         }
         
     }

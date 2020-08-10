@@ -46,6 +46,7 @@
 
     --space-factor: 0.55em;
 
+    --space-xs: calc(var(--space-factor) * 1.5);
     --space-sm: calc(var(--space-factor) * 4);
     --space-md: calc(var(--space-factor) * 5);
     --space-xl: calc(var(--space-factor) * 8);
@@ -53,7 +54,7 @@
 
     /* ----------------------------- Flex model ---------------------------- */
 
-    --menu-list-width: 39em;
+
 
     // 8px ~ 0.535 em ~~ 0.55 em ? 
     // nav from top: 56 px = 1.15*1.4*1.4*1.4*1.2 = 3.85em | Needed 40px = 2.75em
