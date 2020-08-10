@@ -1,9 +1,22 @@
 .button--theme-blue {
 
-    background: #458FF6;
-    color: white;
+    /* Decor */
+
+    background-color: #458FF6;
+
+    /* Animation */
+
     transition: 0.2s ease;
     transition-property: background, box-shadow;
+
+    /* Nested selectors */
+
+    .button__text {
+
+        color: white;
+    }
+
+    /* Pseudo Classes */
 
     &:hover{
 

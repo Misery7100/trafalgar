@@ -1,10 +1,14 @@
 .service-card__pic {
 
+    /* Flex model */
+
     display: flex;
     align-items: center;
     justify-content: flex-start ;
     height: 40%;
     width: 40%;
+
+    /* Need to check */
 
     /* margin-bottom: var(--space-md); */
 

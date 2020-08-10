@@ -1,12 +1,20 @@
 .button__text {
 
-    /* margin-left: calc(var(--space-sm) * 3); */
-    /* margin-right: calc(var(--space-sm) * 3); */
+    /* Typographic */
 
-    font-size: calc(var(--text-base-size) * 1.4);
-    font-style: normal;
-    font-weight: 600;
-    color: white;
+    font: {
+        
+        size: calc(var(--text-base-size) * 1.4);
+        style: normal;
+        weight: 600;
+    }
+
+    /* Need to check */
+
+     // margin-left: calc(var(--space-sm) * 3); 
+     // margin-right: calc(var(--space-sm) * 3); 
+
+    /* Move to debug mode */
 
     // background-color: #1024FA;
     

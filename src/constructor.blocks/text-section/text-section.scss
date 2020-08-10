@@ -1,12 +1,14 @@
 .text-section {
+
+    /* Flex model */
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
+    width: 27%; // ???????/
 
     // Need to fix that shit :/
-    width: 27%;
+    
 
     /* padding: calc(var(--space-lg) * 2); */
     // width: max-content;

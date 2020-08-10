@@ -1,9 +1,14 @@
 .header {
+
+    /* Flex model */
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    font-size: var(--text-base-size);
+
+    /* Need to check */
+
     // height: 100vh;
     // padding: var(--space-md);
 }

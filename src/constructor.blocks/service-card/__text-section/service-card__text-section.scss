@@ -1,0 +1,10 @@
+.service-card__text-section {
+
+    /* Flex model */
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-between;
+    justify-content: flex-start;
+
+}

@@ -1,38 +1,38 @@
-@keyframes transp {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes tratra {
-
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 .section {
+
+    /* Flex model */
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    // margin-top: calc(var(--space-xs) * 0.1);
-
-    /* // margin-bottom: var(--space-xl); */
-    
     align-items: center;
     align-content: flex-start;
     width: 100%;
+
+    /* Need to check */
+
+    // margin-top: calc(var(--space-xs) * 0.1);
+    /* // margin-bottom: var(--space-xl); */
     // transition: margin-top 1s ease;
 
 }
+
+/* Media requests */
 
 @media (max-width: 1070px), (orientation: portrait)  {
 
     .section {
 
+        /* Flex model */
+
         flex-flow: column-reverse wrap;
         justify-content: center;
         align-content: center;
-        animation: transp 1s;
+
+        /* Animation */
+
+        // animation: transp 1s;
+
         // margin-top: calc(var(--space-xs) * 0.2);
 
     }
@@ -41,7 +41,10 @@
 @media (min-width: 1260px) {
 
     .section {
-        animation: tratra 1s;
+
+        /* Animation */
+        
+        // animation: tratra 1s;
     }
 }
 

@@ -1,62 +1,93 @@
 .nav-menu__item {
 
+    /* Flex model */
+
     padding: 0;
-    border: none;
-    font: inherit;
+    display: inline-block; // ???
+    
+    /* Typographic */
+
+    font: {
+
+        family: inherit;
+        size: var(--text-lg); // temporary //
+        weight: normal;
+    }
+
     color: inherit;
+    
+    /* Decor */
+
+    border: none;
+    border-radius: 55px;
     background-color: transparent;
 
-    border-radius: 55px;
+    /* Animation */
 
-    /* Move nav-menu__item width into root variables*/
-
-    // width: 8em;
-
-    /* height: calc(var(--text-xl) * 2.1); */
-
-    // temporary //
-    font-size: var(--text-lg);
-
-    display: flex;
-    justify-content: center;
-
-    font-weight: normal;
-    cursor: pointer;
-    
-    // background-color: #D4D4D4;
     transition: all 0.2s ease;
+
+    /* Other */
+
+    cursor: pointer;
     -webkit-backface-visibility: hidden;
+
+    /* Need to check */
+
+    // Move nav-menu__item width into root variables
+    // width: 8em;
+    // height: calc(var(--text-xl) * 2.1);
+
+    /* For debug mode */
+
+    // background-color: #D4D4D4;
+
+    /* Nested selectors */
 
     p {
 
+        /* Flex model */
+
         width: auto;
+
+        /* Typographic */
+
         color: #1F1534;
-        opacity: 0.5;
-        /* margin-left: calc(var(--space-xs) * 0.5);
-        // margin-right: calc(var(--space-xs) * 0.5);
-        // padding-bottom: var(--space-sm); */
-        // background-color: #D67AA4;
-
-        // font-size: calc(var(--text-base-size) * 1.2);
-
         font-style: normal;
         text-align: center;
 
+        /* Decor */
+
+        opacity: 0.5;
+
+        /* Animation */
+
         transition: all 0.2s ease;
 
-    }
-    
+        /* Need to check */
 
-    &:hover {
+        /* margin-left: calc(var(--space-xs) * 0.5);
+        // margin-right: calc(var(--space-xs) * 0.5);
+        // padding-bottom: var(--space-sm); */
+        // font-size: calc(var(--text-base-size) * 1.2);
+
+        /* For debug mode */
+
+        // background-color: #D67AA4;
+
+
 
         
-        // box-shadow: inset 0 -5px 0 0 #6FA8F7;
+    }
+    
+    /* Pseudo Classes */
+
+    &:hover {
 
         /* Custom space ??? 
         // margin-top: var(--space-xs);*/
         
-
         p {
+
             opacity: 1;
             box-shadow: inset 0 -5px -0 0 #6FA8F7;
         }
@@ -67,7 +98,7 @@
         outline: none;
         
         p {
-            // text-shadow: 0.5px 0 0 #1F1534, -0.5px 0 0 #1F1534;
+            
             opacity: 1;
             font-weight: bold;
         }

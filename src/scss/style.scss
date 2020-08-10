@@ -1,4 +1,5 @@
 @import '../assets/fonts/Muli/Muli.css';
+@import './animations.scss';
 
 @import '../constructor.blocks/header/header.scss';
 
@@ -19,6 +20,7 @@
 @import '../constructor.blocks/service-card/__title/service-card__title.scss';
 @import '../constructor.blocks/service-card/__pic/service-card__pic.scss';
 @import '../constructor.blocks/service-card/__text/service-card__text.scss';
+@import '../constructor.blocks/service-card/__text-section/service-card__text-section.scss';
 
 @import '../constructor.blocks/nav-menu/nav-menu.scss';
 @import '../constructor.blocks/nav-menu/__item/nav-menu__item.scss';

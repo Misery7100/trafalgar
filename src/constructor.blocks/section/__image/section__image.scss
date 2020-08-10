@@ -1,11 +1,17 @@
 .section__image {
 
+    /* Flex model*/
+
     display: flex;
     
+    /* Need to check */
+
     /* padding: calc(var(--space-lg) * 2); */
 
+    /* Nested selectors */
+    
     img {
-        width: 100%;
+        max-width: 100%;
     }
 }
 

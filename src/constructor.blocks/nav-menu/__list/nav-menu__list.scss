@@ -1,14 +1,26 @@
 .nav-menu__list {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    white-space: nowrap;
-    // background-color: #24AFFF;
-    /* width: calc(var(--space-xxxl) * 5); */
+    /* NEED TO FIX WIDTH TO AVOID LOGO MOVING */
 
-    transition: margin-right 0.7s ease-out;
+    /* Flex model */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Typographic */
+
+    white-space: nowrap;
+    
+    /* Need to check */
+
+    /* width: calc(var(--space-xxxl) * 5); */
+    // transition: margin-right 0.7s ease-out;
+
+    /* For debug mode */
+
+    // background-color: #24AFFF;
 }
 
 // @media (max-width: 1259px) {
