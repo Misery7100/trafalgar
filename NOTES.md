@@ -1,6 +1,4 @@
-## Disabled root vars
-
----
+### Disabled root vars
 
 _spaces mean margins and paddings_
 
