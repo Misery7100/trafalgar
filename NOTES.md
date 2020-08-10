@@ -1,5 +1,7 @@
 ## Disabled root vars
 
+---
+
 _spaces mean margins and paddings_
 
 + button__text          - spaces
@@ -16,8 +18,12 @@ _spaces mean margins and paddings_
 
 _also disabled some properties in design-system.scss_
 
+---
+
 Need to sort CSS properties according to pattern
 Need to create media and animation templates :/
+
+---
 
 ### CSS sorting pattern
 
