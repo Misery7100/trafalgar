@@ -3,13 +3,13 @@
     /* Flex model */
 
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: var(--space-xs);
 
     /* Typographic */
 
     font: {
 
         weight: bold;
-        // size: var(--text-xl);
+        size: var(--title-md);
     }
 }

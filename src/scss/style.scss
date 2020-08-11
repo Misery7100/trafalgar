@@ -6,16 +6,19 @@
 @import '../constructor.blocks/button/button.scss';
 @import '../constructor.blocks/button/__text/button__text.scss';
 @import '../constructor.blocks/button/--theme-blue/button--theme-blue.scss';
+@import '../constructor.blocks/button/--theme-white/button--theme-white.scss';
 
 @import '../constructor.blocks/logo/logo.scss';
 
 @import '../constructor.blocks/text-section/text-section.scss';
+@import '../constructor.blocks/text-section/--style-center/text-section--style-center.scss';
+@import '../constructor.blocks/text-section/__separator/text-section__separator.scss';
 @import '../constructor.blocks/text-section/__text/text-section__text.scss';
+@import '../constructor.blocks/text-section/__text/--size-large/text-section__text--size-large.scss';
 @import '../constructor.blocks/text-section/__title/text-section__title.scss';
+@import '../constructor.blocks/text-section/__title/--size-large/text-section__title--size-large.scss';
 
 @import '../constructor.blocks/section/section.scss';
-@import '../constructor.blocks/section/--header/section--header.scss';
-@import '../constructor.blocks/section/--style-left/section--style-left.scss';
 @import '../constructor.blocks/section/__image/section__image.scss';
 
 @import '../constructor.blocks/service-card/service-card.scss';

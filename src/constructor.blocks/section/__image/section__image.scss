@@ -11,15 +11,19 @@
     /* Nested selectors */
     
     img {
-        max-width: 100%; // check better settings
+        // max-width: 100%; // check better settings
+        transition: all 0.2s ease;
+        max-width: 50vmax;
+        // min-width: 35vmax;
     }
 }
 
-// @media (max-width: 1259px) {
+@media (max-width: 1000px) and (orientation: landscape) {
 
-//     .section__image {
-//         // opacity: 0;
-//         width: 65%;
-//         height: auto;
-//     }
-// }
+    .section__image {
+
+        img {
+            max-width: 40vmax;
+        }
+    }
+}

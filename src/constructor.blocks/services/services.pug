@@ -21,11 +21,18 @@ include ../service-card/service-card.pug
                     'Track and save your medical history and health data'}
                 };
 
+    var title = 'Our services';
 
+    var text = 'We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health';
 
 section.block-services
+
+    +add-text-section(title, text, button_text='', button_link='', button_theme='', style='', orientation='center')
     
-    div._cards
+    div.__cards
         each additional, title in services
             each text, pic in additional
                 +add-service(pic, title, text)
+
+    a(href='#').block-button.--theme-white
+        p.__text= 'Learn more'

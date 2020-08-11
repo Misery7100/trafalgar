@@ -1,0 +1,23 @@
+.text-section--style-center {
+
+    align-items: center;
+    max-width: 70%;
+
+    .text-section__text {
+
+        text-align: center;
+    }
+
+    .text-section__title {
+
+        text-align: center;
+    }
+}
+
+@media (orientation: portrait) {
+
+    .text-section--style-center {
+
+        max-width: 80%
+    }
+}

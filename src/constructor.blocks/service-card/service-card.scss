@@ -5,7 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: baseline;
+    justify-content: flex-start;
+    margin: calc(var(--space-xs) * 1.2);
+    padding: var(--space-sm);
+    max-width: 18em; // 17em
+    height: 18em;
+
 
     // background-color: #AAAAAA;
     // border: 5px solid black;
@@ -13,7 +18,7 @@
 
     /* Decor */
 
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.6);
     border-radius: 20px;
 
     /* Need to check */
@@ -30,4 +35,20 @@
 
     // background-color: #AAAAAA;
     // border: 5px solid black;
+}
+
+@media (orientation: portrait) {
+
+    .service-card {
+
+        max-width: 100%;
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: var(--space-xs);
+        padding-right: var(--space-xs);
+
+    }
 }

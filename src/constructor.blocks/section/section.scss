@@ -4,11 +4,12 @@
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: flex-start;
-    width: 100%;
-    margin-top: var(--space-xl);
+    width: 76%;
+    // margin-top: var(--space-xl);
+    margin-top: 7.5vmin;
     margin-bottom: var(--space-section);
 
     /* Need to check */
@@ -21,7 +22,8 @@
 
 /* Media requests */
 
-@media (max-width: 1070px), (orientation: portrait)  {
+// @media (max-width: 1070px) and (orientation: portrait)  {
+@media (max-width: 1070px) and (orientation: portrait)  {
 
     .section {
 

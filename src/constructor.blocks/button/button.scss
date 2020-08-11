@@ -5,7 +5,7 @@
     align-items: center;
     padding-left: var(--space-md);
     padding-right: var(--space-md);
-    height: calc(var(--button-text-size) * 3);
+    height: var(--button-height);
 
     /* Typographic */
 
@@ -15,8 +15,13 @@
 
     /* Decor */
 
-    border: 0;
+    border: 1.4px solid #458FF6;
     border-radius: 55px;
+
+    /* Animation */
+
+    transition: 0.2s ease;
+    transition-property: background, box-shadow, border;
 
     /* Other */
 

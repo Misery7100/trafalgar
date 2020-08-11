@@ -8,3 +8,11 @@
     justify-content: flex-start;
 
 }
+
+@media (orientation: portrait) {
+
+    .service-card__text-section {
+
+        width: 80%;
+    }
+}

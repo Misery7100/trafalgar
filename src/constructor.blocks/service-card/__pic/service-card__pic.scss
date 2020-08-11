@@ -4,12 +4,35 @@
 
     display: flex;
     align-items: center;
-    justify-content: flex-start ;
-    height: 40%;
-    width: 40%;
+    justify-content: flex-start;
+    height: 7em;
+
+    img {
+
+        max-height: 90%;
+        min-height: 75%;
+    }
+    // width: 40%;
 
     /* Need to check */
 
     /* margin-bottom: var(--space-md); */
 
+}
+
+@media (orientation: portrait) {
+
+    .service-card__pic {
+
+        margin-right: var(--space-sm);
+        width: 15%;
+
+        justify-content: center;
+
+        img {
+
+            max-width: 100%;
+        }
+        
+    }
 }

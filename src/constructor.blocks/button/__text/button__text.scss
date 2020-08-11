@@ -10,8 +10,12 @@
         
         size: var(--button-text-size);
         style: normal;
-        weight: bold;
+        weight: 600;
     }
+
+    /* Animation */
+
+    transition: all 0.2s ease;
 
     /* Need to check */
 

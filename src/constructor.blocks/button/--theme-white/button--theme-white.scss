@@ -1,0 +1,30 @@
+.button--theme-white {
+
+    /* Decor */
+
+    background-color: #FFFFFF;
+
+    /* Nested selectors */
+
+    .button__text {
+
+        color: #458FF6;
+    }
+
+    /* Pseudo Classes */
+
+    &:hover{
+
+        border-color: #C15699;
+
+        .button__text {
+
+            color: #C15699;
+        }
+    }
+
+    &:active{
+
+        // need to setup
+    }
+}
