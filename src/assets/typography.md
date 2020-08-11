@@ -1,6 +1,6 @@
 # Typography #
 
-Correct font size for nav-menu: `1.26 * 1.26 = 1.588 em`  
+Correct font size for nav-menu: `1.26 * 1.26 = 1.588 em`?
 That's equal to 24px.!!!!!!!
 
 Font in design layout:
