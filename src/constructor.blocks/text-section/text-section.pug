@@ -23,8 +23,8 @@ mixin add-text-section(title, text, button_text, button_link, button_theme, styl
                         a(href=button_link).block-button.--theme-blue
                             p.__text= button_text
 
-                    default                   
-                        a(href=button_link).block-button
+                    default                  
+                        a(href=button_link).block-button.--theme-white
                             p.__text= button_text
     else
 
@@ -48,7 +48,7 @@ mixin add-text-section(title, text, button_text, button_link, button_theme, styl
                             p.__text= button_text
 
                     default                   
-                        a(href=button_link).block-button
+                        a(href=button_link).block-button.--theme-white
                             p.__text= button_text
 
 

@@ -10,6 +10,7 @@
 
     // border-radius: 55px;
     padding-bottom: calc(4.6px);
+
     // margin-right: var(--space-lg);
 
     // ???????
@@ -18,4 +19,16 @@
     // padding-right: var(--space-md);
     
     
+}
+
+@media (orientation: portrait) {
+
+    .logo {
+
+        img {
+
+            height: 50%;
+            padding-bottom: 0;
+        }
+    }
 }

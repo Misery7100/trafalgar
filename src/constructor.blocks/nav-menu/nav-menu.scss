@@ -19,6 +19,8 @@
 
     /* Need to check */
 
+    // box-shadow: 0 0 0 3px black;
+
     // margin-left: 12%;
     // margin-right: 12%;
 
@@ -30,9 +32,16 @@
 
 /* Media requests */
 
-@media (min-width: 1260px) {
+@media (orientation: portrait) {
 
     .nav-menu {
+
+        margin-top: var(--space-xs);
+        // justify-content: space-around;
+        height: calc(var(--button-text-size) * 5);
+        width: 100%;
+        padding-left: 12%; // TEMPORARY
+
         
         // animation: transp 0.8s;
         

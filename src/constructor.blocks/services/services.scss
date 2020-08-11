@@ -6,7 +6,16 @@
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
-    width: 76%;
+    width: 80%;
     margin-bottom: var(--space-section);
 
+}
+
+@media (orientation: portrait) {
+
+    .services {
+
+        width: 90%;
+        margin-bottom: calc(var(--space-section) * 0.6);
+    }
 }

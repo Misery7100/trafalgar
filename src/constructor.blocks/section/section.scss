@@ -22,8 +22,7 @@
 
 /* Media requests */
 
-// @media (max-width: 1070px) and (orientation: portrait)  {
-@media (max-width: 1070px) and (orientation: portrait)  {
+@media (orientation: portrait)  {
 
     .section {
 
@@ -32,6 +31,8 @@
         flex-flow: column-reverse wrap;
         justify-content: center;
         align-content: center;
+        width: 95%;
+        margin-bottom: calc(var(--space-section) * 0.6);
 
         /* Animation */
 
@@ -41,17 +42,3 @@
 
     }
 }
-
-@media (min-width: 1260px) {
-
-    .section {
-
-        /* Animation */
-        
-        // animation: tratra 1s;
-    }
-}
-
-@media (orientation: portrait) {}
-
-@media (orientation: landscape) {}

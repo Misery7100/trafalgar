@@ -60,11 +60,11 @@
     --space-sm: calc(var(--space-factor) * 4);
     --space-md: calc(var(--space-factor) * 5);
     --space-xl: calc(var(--space-factor) * 8);
-    --space-section: calc(var(--space-factor) * 26);
+    --space-section: calc(var(--space-factor) * 24);
 
     /* ----------------------------- Flex model ---------------------------- */
 
-    --button-height: calc(var(--font-base-size) * 3);
+    --button-height: calc(var(--font-base-size) * 2.8);
 
 
     // 8px ~ 0.535 em ~~ 0.55 em ? 
@@ -87,6 +87,7 @@ html {
 
 body {
 
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,6 +96,7 @@ body {
     // font-size: 1em;
     
 }
+
 
 h1, h2, h3 {
 
@@ -117,8 +119,6 @@ a {
 
 @media (orientation: landscape) {
 
-
-
     body {
 
         font-size: calc( (var(--min-font-size) * 1em) + var(--font-difference) * ((100vw - 700px) / (1900 - 700)));
@@ -129,6 +129,6 @@ a {
 
     body {
 
-        font-size: calc((1 * 1em) + 4 * ((100vh - 700px) / (1500 - 700)));
+        font-size: calc((1.5 * 1em) + 4 * ((100vh - 700px) / (1500 - 700))); //temporary
     }
 }

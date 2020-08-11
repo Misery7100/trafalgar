@@ -3,9 +3,11 @@
     /* Flex model */
     display: flex;
     align-items: center;
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
+    justify-content: center;
+    // padding-left: var(--space-md);
+    // padding-right: var(--space-md);
     height: var(--button-height);
+    width: calc(7em + 2 * var(--space-md));
 
     /* Typographic */
 
@@ -15,8 +17,8 @@
 
     /* Decor */
 
-    border: 1.4px solid #458FF6;
-    border-radius: 55px;
+    border: calc(var(--button-height) / 45) solid #458FF6;
+    border-radius: var(--button-height);
 
     /* Animation */
 

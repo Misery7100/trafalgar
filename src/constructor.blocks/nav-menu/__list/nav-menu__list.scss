@@ -23,6 +23,15 @@
 
 }
 
+@media (orientation: portrait) {
+
+    .nav-menu__list {
+
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
 // @media (max-width: 1259px) {
 //     .nav-menu__list {
 //         // margin-right: -1000px;

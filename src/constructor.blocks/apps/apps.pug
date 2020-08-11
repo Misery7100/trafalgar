@@ -1,0 +1,26 @@
+//- include ../text-section/text-section.pug
+
+- var title_1 = 'Leading healthcare providers';
+- var button_text_1 = 'Learn more';
+- var img_1 = './src/constructor.blocks/apps/img/providers-pic.png';
+
+- var text_1 = 'Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver';
+
+
+- var title_2 = 'Download our mobile apps';
+- var button_text_2 = 'Download';
+- var img_2 = './src/constructor.blocks/apps/img/apps-pic.png';
+
+- var text_2 = 'Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely';
+
+section.block-section.--style-right
+
+    +add-text-section(title_1, text_1, button_text_1, '#')
+    div.__image
+        img(src=img_1)
+
+section.block-section
+
+    +add-text-section(title_2, text_2, button_text_2, '#')
+    div.__image
+        img(src=img_2)

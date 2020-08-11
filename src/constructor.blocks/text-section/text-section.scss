@@ -21,11 +21,19 @@
     // box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-@media (max-width: 1070px) {
+@media (orientation: portrait) {
 
     .text-section {
-        // margin: var(--space-sm);
-        // width: 80%;
+
+        align-items: center;
+        max-width: 95%;
+    }
+
+    .text-section__text,
+    .text-section__title {
+
+        text-align: center;
     }
 }
+
 

@@ -1,11 +1,11 @@
 .text-section__separator {
 
-    height: 2px;
-    width: 56px;
+    height: calc(var(--button-height) / 28);
+    width: var(--button-height);
 
     margin-top: var(--space-sm);
     margin-bottom: var(--space-sm);
     background-color: #000000;
-    border-radius: 5px;
+    border-radius: calc(var(--button-height) / 28 * 2.5);
 
 }
