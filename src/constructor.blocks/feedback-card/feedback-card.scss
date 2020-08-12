@@ -3,15 +3,15 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: calc(54vw);
-    margin-left: 8vw;
-    margin-right: 8vw;
+    width: calc(50vw);
+    margin-left: 10vw;
+    margin-right: 10vw;
 
 }
 
 .test-slides {
 
-    width: 100%;
+    width: 70vw;
     // margin-right: 0.3em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -26,5 +26,10 @@
         margin-right: 7vw;
         flex-flow: column nowrap;
 
+    }
+
+    .test-slides {
+
+        width: 90vw;
     }
 }

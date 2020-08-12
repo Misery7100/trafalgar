@@ -30,13 +30,13 @@
     .service-card__pic {
 
         margin-right: var(--space-sm);
-        width: 15%;
-
+        height: 100%;
+        width: 20%;
         justify-content: center;
 
         img {
 
-            max-width: 100%;
+            width: 5em;
         }
         
     }

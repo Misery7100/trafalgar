@@ -1,17 +1,19 @@
-.service-card__text-section {
+.service-card__text-box {
 
     /* Flex model */
 
     display: flex;
     flex-flow: column wrap;
-    align-items: space-between;
     justify-content: flex-start;
+
 
 }
 
 @media (orientation: portrait) {
 
     .service-card__text-section {
+
+        // flex-basis: 80%;
 
         width: 80%;
     }

@@ -11,18 +11,24 @@ section.block-testimonials
         +add-text-section(title, text, button_text='', button_link='', button_theme='', style='', orientation='center', theme='white')
 
         div.__hider
-            ul.__slides
-                +add-feedback('John Woodson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
-                +add-feedback('Alan Pirsson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
-                +add-feedback('Alan Pirsson', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+            ul(style='left: -70vw;').__slides
+                +add-feedback('1', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('2', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('3', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('4', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('5', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('6', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('7', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('8', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
 
         
     div.block-slider
         button.__prev
             p Prev
+        div.__dots
         button.__next
             p Next
-        div.__dots
+        
 
 
             //- div.__cards
