@@ -1,0 +1,22 @@
+.testimonials {
+
+    /* Flex model */
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin-bottom: var(--space-section);
+    padding-bottom: var(--space-xl);
+
+}
+
+@media (orientation: portrait) {
+
+    .testimonials {
+
+        width: 90%;
+        margin-bottom: calc(var(--space-section) * 0.6);
+    }
+}

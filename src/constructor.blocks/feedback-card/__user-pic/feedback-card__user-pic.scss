@@ -1,0 +1,14 @@
+.feedback-card__user-pic {
+    
+    display: flex;
+    width: 33%;
+    // border-radius: 50%;
+    // box-shadow: inset 0 0 10px #FFFFFF;
+
+    img {
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.25em #FFFFFF;
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,11 @@
+.feedback-card__text {
+    
+    color: white;
+    opacity: 0.9;
+
+    font: {
+
+        size: calc(var(--text-md) * 1.05);
+        weight: normal;
+    }
+}

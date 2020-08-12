@@ -1,0 +1,15 @@
+.feedback-card {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 75%;
+}
+
+@media (orientation: portrait) {
+
+    .feedback-card {
+
+        flex-flow: column nowrap;
+    }
+}

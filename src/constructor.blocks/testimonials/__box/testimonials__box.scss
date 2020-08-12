@@ -1,0 +1,35 @@
+.testimonials__box {
+
+    /* Flex model */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-bottom: calc(var(--space-xl));
+    padding-top: calc(var(--space-xl) * 0.9);
+
+    /* Decor */
+
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 1.2em;
+
+    /* Nested */
+
+    .text-section__title {
+
+        margin-block-start: 0;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    .testimonials__box {
+
+        padding-bottom: var(--space-md);
+        padding-top: var(--space-md);
+
+    }
+}

@@ -12,11 +12,13 @@
 
 @import '../constructor.blocks/text-section/text-section.scss';
 @import '../constructor.blocks/text-section/--style-center/text-section--style-center.scss';
+@import '../constructor.blocks/text-section/--theme-white/text-section--theme-white.scss';
 @import '../constructor.blocks/text-section/__separator/text-section__separator.scss';
 @import '../constructor.blocks/text-section/__text/text-section__text.scss';
 @import '../constructor.blocks/text-section/__text/--size-large/text-section__text--size-large.scss';
 @import '../constructor.blocks/text-section/__title/text-section__title.scss';
 @import '../constructor.blocks/text-section/__title/--size-large/text-section__title--size-large.scss';
+
 
 @import '../constructor.blocks/section/section.scss';
 @import '../constructor.blocks/section/__image/section__image.scss';
@@ -26,7 +28,7 @@
 @import '../constructor.blocks/service-card/__title/service-card__title.scss';
 @import '../constructor.blocks/service-card/__pic/service-card__pic.scss';
 @import '../constructor.blocks/service-card/__text/service-card__text.scss';
-@import '../constructor.blocks/service-card/__text-section/service-card__text-section.scss';
+@import '../constructor.blocks/service-card/__text-box/service-card__text-box.scss';
 
 @import '../constructor.blocks/nav-menu/nav-menu.scss';
 @import '../constructor.blocks/nav-menu/__item/nav-menu__item.scss';
@@ -34,3 +36,14 @@
 
 @import '../constructor.blocks/services/services.scss';
 @import '../constructor.blocks/services/__cards/services__cards.scss';
+
+@import '../constructor.blocks/testimonials/testimonials.scss';
+@import '../constructor.blocks/testimonials/__box/testimonials__box.scss';
+
+@import '../constructor.blocks/feedback-card/feedback-card.scss';
+@import '../constructor.blocks/feedback-card/__box/feedback-card__box.scss';
+@import '../constructor.blocks/feedback-card/__user-pic/feedback-card__user-pic.scss';
+@import '../constructor.blocks/feedback-card/__text/feedback-card__text.scss';
+@import '../constructor.blocks/feedback-card/__user-info/feedback-card__user-info.scss';
+@import '../constructor.blocks/feedback-card/__user-name/feedback-card__user-name.scss';
+@import '../constructor.blocks/feedback-card/__user-profession/feedback-card__user-profession.scss';

@@ -1,38 +1,64 @@
 
 
-mixin add-text-section(title, text, button_text, button_link, button_theme, style, orientation)
+mixin add-text-section(title, text, button_text, button_link, button_theme, style, orientation, theme)
     
     if orientation == 'center'
+        if theme == 'white'
 
-        div.block-text-section.--style-center
+            div.block-text-section.--style-center.--theme-white
 
-            case style
-                when 'large'
-                    h1.__title.--size-large= title
-                    p.__text.--size-large= text
+                case style
+                    when 'large'
+                        h2.__title.--size-large= title
+                        p.__text.--size-large= text
 
-                default
-                    h2.__title= title
-                    div.__separator
-                    p.__text= text
+                    default
+                        h2.__title= title
+                        div.__separator
+                        p.__text= text
 
-            if button_text
+                if button_text
 
-                case button_theme
-                    when 'blue'
-                        a(href=button_link).block-button.--theme-blue
-                            p.__text= button_text
+                    case button_theme
+                        when 'blue'
+                            a(href=button_link).block-button.--theme-blue
+                                p.__text= button_text
 
-                    default                  
-                        a(href=button_link).block-button.--theme-white
-                            p.__text= button_text
+                        default                  
+                            a(href=button_link).block-button.--theme-white
+                                p.__text= button_text
+
+        else 
+
+            div.block-text-section.--style-center
+
+                case style
+                    when 'large'
+                        h2.__title.--size-large= title
+                        p.__text.--size-large= text
+
+                    default
+                        h2.__title= title
+                        div.__separator
+                        p.__text= text
+
+                if button_text
+
+                    case button_theme
+                        when 'blue'
+                            a(href=button_link).block-button.--theme-blue
+                                p.__text= button_text
+
+                        default                  
+                            a(href=button_link).block-button.--theme-white
+                                p.__text= button_text
     else
 
         div.block-text-section
 
             case style
                 when 'large'
-                    h1.__title.--size-large= title
+                    h2.__title.--size-large= title
                     p.__text.--size-large= text
 
                 default
@@ -50,56 +76,3 @@ mixin add-text-section(title, text, button_text, button_link, button_theme, styl
                     default                   
                         a(href=button_link).block-button.--theme-white
                             p.__text= button_text
-
-
-
-
-
-    //- if style == 'large'
-
-    //-     div.block-text-section
-    //-         h1.__title.--size-large= title
-
-    //-         p.__text.--size-large= text
-
-    //-         if button_text
-    //-             if button_theme == 'blue'
-    //-                 a(href=button_link).block-button.-theme-blue
-    //-                     p.__text= button_text
-
-    //-             else
-    //-                 a(href='').block-button
-    //-                     p.__text= button_text
-    //- else
-
-    //-     if orienation == 'center'
-
-    //-         div.block-text-section.--style-center
-    //-             h1.__title= title
-    //-             div.__separator
-    //-             p.__text= text
-
-    //-             if button_text
-    //-                 if button_theme == 'blue'
-    //-                     a(href=button_link).block-button.-theme-blue
-    //-                         p.__text= button_text
-
-    //-                 else
-    //-                     a(href='').block-button
-    //-                         p.__text= button_text
-
-    //-     else
-
-    //-         div.block-text-section
-    //-             h1.__title= title
-    //-             div.__separator
-    //-             p.__text= text
-
-    //-             if button_text
-    //-                 if button_theme == 'blue'
-    //-                     a(href=button_link).block-button.-theme-blue
-    //-                         p.__text= button_text
-
-    //-                 else
-    //-                     a(href='').block-button
-    //-                         p.__text= button_text

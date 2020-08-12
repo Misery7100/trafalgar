@@ -1,0 +1,25 @@
+include ../feedback-card/feedback-card.pug
+
+- var title = 'What our customers are saying';
+- var text = '';
+
+- var testimonial_1 = '“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”';
+
+section.block-testimonials
+
+    div.__box
+        +add-text-section(title, text, button_text='', button_link='', button_theme='', style='', orientation='center', theme='white')
+
+        +add-feedback('John Woodson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+        
+    div.block-slider
+        button.__prev
+            p Prev
+        button.__next
+            p Next
+
+
+            //- div.__cards
+    //-     each additional, title in services
+    //-         each text, pic in additional
+    //-             +add-service(pic, title, text)

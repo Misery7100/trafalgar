@@ -1,0 +1,16 @@
+.feedback-card__box {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+@media (orientation: portrait) {
+    .feedback-card__box {
+
+        margin-bottom: var(--space-xs);
+
+    }
+}    
