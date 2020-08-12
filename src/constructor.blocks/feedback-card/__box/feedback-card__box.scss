@@ -5,6 +5,9 @@
     justify-content: flex-start;
     align-items: center;
     flex-basis: 100%;
+    padding-right: 1em;
+
+    // padding-right: var(--space-xxs);
 }
 
 @media (orientation: portrait) {

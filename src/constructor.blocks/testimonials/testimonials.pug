@@ -10,13 +10,19 @@ section.block-testimonials
     div.__box
         +add-text-section(title, text, button_text='', button_link='', button_theme='', style='', orientation='center', theme='white')
 
-        +add-feedback('John Woodson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+        div.__hider
+            ul.__slides
+                +add-feedback('John Woodson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('Alan Pirsson', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('Alan Pirsson', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+
         
     div.block-slider
         button.__prev
             p Prev
         button.__next
             p Next
+        div.__dots
 
 
             //- div.__cards

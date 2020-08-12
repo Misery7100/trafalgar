@@ -1,14 +1,15 @@
 mixin add-feedback(user_name, user_prof, text, user_pic)
 
-    div.block-feedback-card
+    li.test-slides
+        div.block-feedback-card
 
-        div.__box
+            div.__box
 
-            div.__user-pic
-                img(src=user_pic)
-            div.__user-info
-                p.__user-name= user_name
-                p.__user-profession= user_prof
+                div.__user-pic
+                    img(src=user_pic)
+                div.__user-info
+                    p.__user-name= user_name
+                    p.__user-profession= user_prof
 
-        div.__box
-            p.__text= text
+            div.__box
+                p.__text= text

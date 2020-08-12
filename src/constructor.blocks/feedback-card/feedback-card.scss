@@ -3,13 +3,28 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: 75%;
+    width: calc(54vw);
+    margin-left: 8vw;
+    margin-right: 8vw;
+
+}
+
+.test-slides {
+
+    width: 100%;
+    // margin-right: 0.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 @media (orientation: portrait) {
 
     .feedback-card {
 
+        width: calc(76vw);
+        margin-left: 7vw;
+        margin-right: 7vw;
         flex-flow: column nowrap;
+
     }
 }
