@@ -52,3 +52,9 @@
 
 @import '../constructor.blocks/slider/__dots/slider__dots.scss';
 @import '../constructor.blocks/slider/slider.scss';
+@import '../constructor.blocks/slider/__dots-item/slider__dots-item.scss';
+@import '../constructor.blocks/slider/__dots-item/--active/slider__dots-item--active.scss';
+@import '../constructor.blocks/slider/__next/slider__next.scss';
+@import '../constructor.blocks/slider/__prev/slider__prev.scss';
+
+@import './patterns.scss';

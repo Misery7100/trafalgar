@@ -9,6 +9,7 @@
     
     padding-inline-start: 0;
     margin: 0;
+    left: -70vw;
 
     // user-select: none; // TEMPORARY
 
@@ -18,4 +19,13 @@
 .remove-animation {
 
     transition: none;
+}
+
+@media (orientation: portrait) {
+
+    .testimonials__slides {
+    
+        left: -90vw;
+    
+    }
 }

@@ -18,6 +18,14 @@
   box-shadow: none;
 }
 
+.js-focus-visible .slider__next:focus:not(.focus-visible) {
+  box-shadow: none;
+}
+
+.js-focus-visible .slider__prev:focus:not(.focus-visible) {
+  box-shadow: none;
+}
+
 *:focus{
 
     outline: none;

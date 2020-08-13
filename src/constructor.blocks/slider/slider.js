@@ -1,21 +1,18 @@
 
-// Получаем видимую часть слайда
 var target = window.document.getElementsByClassName("testimonials__slides")[0];
-// Получаем кнопку вперёд
 let btnNext = document.querySelector('button.slider__next');
-// Получаем кнопку назад
 let btnPrev = document.querySelector('button.slider__prev');
-// Получаем элемент со всеми слайдами
 let slider = document.querySelector("ul.testimonials__slides");
-
 let dots = document.querySelector('div.slider__dots');
 
 const num = slider.childNodes.length;
+
 var slideWidth = 70;
-// // Получаем элементы показа слайда
-// let viewSliders = document.querySelectorAll(".viewSlide");
-// Объявляем переменную номера слайда
 let viewSlide = 0;
+
+let dotActive = 'slider__dots-item--active';
+let dotClass = 'slider__dots-item';
+
 let isClicked = false;
 let avoidDoubleClick = false;
 
@@ -23,11 +20,11 @@ for (let i = 0; i < num; i++) {
 
     let span = document.createElement('span');
     if (i == 0) {
-        span.className = 'span-span-span test-black';
+        span.className = dotClass + ' ' + dotActive;
     }
 
     else {
-        span.className = 'span-span-span';
+        span.className = dotClass;
     }
     dots.appendChild(span);
 }
@@ -62,161 +59,141 @@ var checkWidth = () => {
 
     if (width > height) {slideWidth = 70;}
     else {slideWidth = 90;}
+
+    return slideWidth;
 };
 
-var allDots = document.querySelectorAll('span.span-span-span');
+/* =================================================================== */
 
-for (let j = 0; j < num; j++) {
 
-    var dott = allDots[j];
+var allDots = document.querySelectorAll('span.' + dotClass);
 
-    dott.addEventListener('click', () => {
+var toggleDots = (viewSlide) => {
 
-        let allDots = document.querySelectorAll('span.span-span-span');
-        let items = document.querySelectorAll('li.test-slides');
-        var classes = slider.classList;
+    allDots[viewSlide].classList.toggle(dotActive);
+};
 
-        console.log(j);
+/* =================================================================== */
 
-        allDots[viewSlide].classList.toggle('test-black');
-        viewSlide = j;
-        allDots[viewSlide].classList.toggle('test-black');
+var slideCards = direction => {
 
-        if (j == num - 1) {
+    if (avoidDoubleClick || (Math.abs(direction)!= 1)) {return}
 
-            
-            let first = items[0].cloneNode(deep=true);
-            
-            slider.appendChild(first);
-            slider.style.left = -(slideWidth) * (j+1) + "vw"; // Доделать
+    toggleDots(viewSlide);
+    let cards = document.querySelectorAll('li.test-slides');
+    let classes = slider.classList;
+    let movedCard;
+    let index;
 
-        }
-
-        else {
-
-            slider.style.left = -(slideWidth) * (j + 1) + "vw";
-        }
-
-    });
-} 
-
-// var scroll = setInterval(() => {
-
-//     if (avoidDoubleClick) {return}
     
-//     allDots[viewSlide].classList.toggle('test-black');
-
-//     checkWidth();
-//     nextSlide();
-//     console.log(viewSlide);
-
-//     let items = document.querySelectorAll('li.test-slides');
-//     let first = items[0].cloneNode(deep=true);
-//     var classes = slider.classList;
-    
-//     allDots[viewSlide].classList.toggle('test-black');
-//     // setTimeout(slider.insertBefore(last, first), 200);
-//     slider.style.left = -(slideWidth) * 2 + "vw";
-
-
-
-//     avoidDoubleClick = true;
-//     setTimeout(() => {
-
-//         slider.appendChild(first);
-//         slider.removeChild(items[0]);
-//         classes.add('remove-animation');
-//         slider.style.left = -(slideWidth) + "vw";
-//         avoidDoubleClick = false;
-        
-//     }, 400);
-//     // slider.appendChild(first);
-//     // slider.removeChild(items[0]);
-//     // slider.removeChild(last);
-
-//     setTimeout(() => {classes.remove('remove-animation')}, 450);
-
-// }, 5000);
-
-
-btnNext.addEventListener("click", function () {
-
-    if (avoidDoubleClick) {return}
-    // clearInterval(scroll);
-    isClicked = true;
-
     checkWidth();
 
-    nextSlide();
+    switch (direction) {
 
-    let items = document.querySelectorAll('li.test-slides');
-    let first = items[0].cloneNode(deep=true);
-    var classes = slider.classList;
+        case 1:
 
-    // setTimeout(slider.insertBefore(last, first), 200);
-    slider.style.left = -(slideWidth) * 2 + "vw";
+            nextSlide();
+            console.log(viewSlide);
+            toggleDots(viewSlide);
+
+            index = 0;
+            movedCard = cards[index].cloneNode(deep = true);
+            break
+            
+        case -1:
+
+            prevSlide();
+            console.log('?????');
+            toggleDots(viewSlide);
+
+            index = num - 1;
+            movedCard = cards[index].cloneNode(deep = true);
+            break
+
+    }
+
+
+    slider.style.left = -(slideWidth) * (1 + direction) + "vw";
 
     avoidDoubleClick = true;
+
     setTimeout(() => {
 
-        slider.appendChild(first);
-        slider.removeChild(items[0]);
+        if (direction == 1) {slider.appendChild(movedCard);}
+        else {slider.insertBefore(movedCard, cards[0]);}
+        
+        slider.removeChild(cards[index]);
+
         classes.add('remove-animation');
         slider.style.left = -(slideWidth) + "vw";
         avoidDoubleClick = false;
         
     }, 400);
-    // slider.appendChild(first);
-    // slider.removeChild(items[0]);
-    // slider.removeChild(last);
 
     setTimeout(() => {classes.remove('remove-animation')}, 450);
+            
+};
 
+/* =================================================================== */
+
+
+var scroll = setInterval(() => {
+
+    slideCards(1);
+
+    // if (avoidDoubleClick) {return}
+    
+    // // allDots[viewSlide].classList.toggle('test-black');
+    // toggleDots(viewSlide);
+    // checkWidth();
+    // nextSlide();
+    // console.log(viewSlide);
+
+    // let items = document.querySelectorAll('li.test-slides');
+    // let first = items[0].cloneNode(deep=true);
+    // var classes = slider.classList;
+    
+    // allDots[viewSlide].classList.toggle('test-black');
+    // // setTimeout(slider.insertBefore(last, first), 200);
+    // slider.style.left = -(slideWidth) * 2 + "vw";
+
+
+
+    // avoidDoubleClick = true;
+    // setTimeout(() => {
+
+    //     slider.appendChild(first);
+    //     slider.removeChild(items[0]);
+    //     classes.add('remove-animation');
+    //     slider.style.left = -(slideWidth) + "vw";
+    //     avoidDoubleClick = false;
+        
+    // }, 400);
+
+    // setTimeout(() => {classes.remove('remove-animation')}, 450);
+
+}, 5000);
+
+
+btnNext.addEventListener("click", () => {
+
+    isClicked = true; 
+    clearInterval(scroll); 
+    slideCards(1);
 });
  
 
-btnPrev.addEventListener("click", function () {
+btnPrev.addEventListener("click", () => {
 
-    if (avoidDoubleClick) {return}
-    // clearInterval(scroll);
-    isClicked = true;
-
-    checkWidth();
-
-    prevSlide();
-
-    let items = document.querySelectorAll('li.test-slides');
-    let last = items[num - 1].cloneNode(deep=true);
-    var classes = slider.classList;
-
-    slider.style.left = 0 + "vw";
-
-    avoidDoubleClick = true;
-    setTimeout(() => {
-        
-        slider.insertBefore(last, items[0]);
-        slider.removeChild(items[num - 1]);
-        classes.add('remove-animation');
-        slider.style.left = -(slideWidth) + "vw";
-        avoidDoubleClick = false;
-
-    }, 400);
-    // slider.appendChild(first);
-    // slider.removeChild(items[0]);
-    // slider.removeChild(last);
-
-
-    setTimeout(() => {classes.remove('remove-animation')}, 450);
-    
-
+    isClicked = true; 
+    clearInterval(scroll); 
+    slideCards(-1);
 });
 
 
+/*slider.addEventListener("mouseover", () => {
 
-
-slider.addEventListener("mouseover", () => {
-
-    // clearInterval(scroll);
+    clearInterval(scroll);
     slider.style.cursor = 'pointer';
 });
 
@@ -225,20 +202,14 @@ slider.addEventListener("mouseout", () => {
 
     slider.style.cursor = 'none';
 
-    // if (!isClicked) {
+    if (!isClicked) {
 
-    //     scroll = setInterval(() => {
-
-    //         checkWidth();
-    //         nextSlide();
-    //         slider.style.left = -viewSlide * slideWidth + "vw";
-    //         console.log(viewSlide);
-
-    //     }, 7000);
-    // }
-});
+        scroll = setInterval(() => {slideCards(1)}, 5000);
+    }
+});*/
 
 
+/* =================================================================== */
 
 
 

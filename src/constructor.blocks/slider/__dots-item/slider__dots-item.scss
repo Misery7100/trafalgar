@@ -1,0 +1,11 @@
+.slider__dots-item {
+    
+    width: calc(var(--space-xxs) * 1.1);
+    height: calc(var(--space-xxs) * 1.1);
+    background-color: #5B9BF3;
+    opacity: 0.3;
+    margin: 0.5em;
+    border-radius: 50%;
+
+    transition: 0.2s;
+}

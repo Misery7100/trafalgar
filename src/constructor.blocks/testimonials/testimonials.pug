@@ -11,7 +11,7 @@ section.block-testimonials
         +add-text-section(title, text, button_text='', button_link='', button_theme='', style='', orientation='center', theme='white')
 
         div.__hider
-            ul(style='left: -70vw;').__slides
+            ul.__slides
                 +add-feedback('1', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('2', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('3', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
@@ -21,13 +21,14 @@ section.block-testimonials
                 +add-feedback('7', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('8', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
 
+    
         
     div.block-slider
         button.__prev
-            p Prev
+            img(src='./src/constructor.blocks/slider/__next/button-next.svg')
         div.__dots
         button.__next
-            p Next
+            img(src='./src/constructor.blocks/slider/__next/button-next.svg')
         
 
 

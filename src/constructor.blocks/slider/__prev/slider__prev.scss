@@ -1,0 +1,45 @@
+.slider__prev {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: var(--space-md);
+    height: 2em;
+    // padding-right: var(--space-md);
+
+    /* Typographic */
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    /* Decor */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: var(--button-height);
+
+
+    /* Animation */
+
+    transition: 0.2s ease;
+
+    /* Other */
+
+    cursor: pointer;
+    user-select: none;
+    
+    img {
+        transform: scaleX(-1);
+        height: 100%;
+    }
+
+    &:hover {
+
+        transform: translateX(calc( var(--space-xxs)));
+    }
+
+    &:active {
+
+        transform: translateX(calc(-1 * var(--space-xxs)));
+    }
+}
