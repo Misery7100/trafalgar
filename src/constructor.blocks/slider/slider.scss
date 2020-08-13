@@ -6,3 +6,12 @@
     margin-top: var(--space-md);
     justify-content: space-between;
 }
+
+@media (orientation: portrait) {
+    .slider {
+
+        width: 100%;
+        margin-top: var(--space-xs);
+
+    }
+}

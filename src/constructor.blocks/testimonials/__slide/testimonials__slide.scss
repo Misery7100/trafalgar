@@ -1,0 +1,16 @@
+.testimonials__slide {
+
+    width: 70vw;
+    // margin-right: 0.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+}
+
+@media (orientation: portrait) {
+
+    .testimonials__slide {
+
+        width: 90vw;
+    }
+}

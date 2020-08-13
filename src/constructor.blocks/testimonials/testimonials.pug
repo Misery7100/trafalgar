@@ -4,6 +4,7 @@ include ../feedback-card/feedback-card.pug
 - var text = '';
 
 - var testimonial_1 = '“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”';
+- var test_test_test = 'I`m a superstar :D';
 
 section.block-testimonials
 
@@ -13,22 +14,26 @@ section.block-testimonials
         div.__hider
             ul.__slides
                 +add-feedback('1', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
-                +add-feedback('2', 'Freelancer', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
-                +add-feedback('3', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
+                +add-feedback('Daniel Reshetnikov', 'Student', test_test_test, './src/constructor.blocks/testimonials/img/feedback-2.jpg')
+                +add-feedback('Ali Nabar Abu Cadaro', 'Founder TT.rt', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('4', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('5', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('6', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('7', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
                 +add-feedback('8', 'JAjjasj', testimonial_1, './src/constructor.blocks/testimonials/img/feedback-1-copy.jpg')
 
-    
+        div.block-slider
+            button.__prev.--internal
+                img(src='./src/constructor.blocks/slider/img/slider-button-internal.svg')
+            button.__next.--internal
+                img(src='./src/constructor.blocks/slider/img/slider-button-internal.svg')
         
     div.block-slider
         button.__prev
-            img(src='./src/constructor.blocks/slider/__next/button-next.svg')
+            img(src='./src/constructor.blocks/slider/img/slider-button.svg')
         div.__dots
         button.__next
-            img(src='./src/constructor.blocks/slider/__next/button-next.svg')
+            img(src='./src/constructor.blocks/slider/img/slider-button.svg')
         
 
 

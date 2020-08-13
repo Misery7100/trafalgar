@@ -4,3 +4,11 @@
     flex-direction: row;
     
 }
+
+@media (orientation: portrait) {
+
+    .slider__dots {
+
+        display: none;
+    }
+}

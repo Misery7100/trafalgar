@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin-right: var(--space-md);
-    height: 2em;
+    height: 2.4em;
     // padding-right: var(--space-md);
 
     /* Typographic */
@@ -13,6 +13,7 @@
     text-decoration: none;
 
     /* Decor */
+    // opacity: 0.6;
     background-color: transparent;
     border: none;
     outline: none;
@@ -29,17 +30,29 @@
     user-select: none;
     
     img {
+
+
         transform: scaleX(-1);
         height: 100%;
     }
 
     &:hover {
 
-        transform: translateX(calc( var(--space-xxs)));
+        filter: brightness(0.7);
+        // opacity: 1;
     }
 
     &:active {
 
         transform: translateX(calc(-1 * var(--space-xxs)));
     }
+}
+
+@media (orientation: portrait) {
+
+    .slider__prev {
+
+        display: none;
+    }
+
 }

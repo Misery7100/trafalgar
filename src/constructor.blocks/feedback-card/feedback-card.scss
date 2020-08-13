@@ -9,14 +9,6 @@
 
 }
 
-.test-slides {
-
-    width: 70vw;
-    // margin-right: 0.3em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 @media (orientation: portrait) {
 
     .feedback-card {
@@ -27,9 +19,5 @@
         flex-flow: column nowrap;
 
     }
-
-    .test-slides {
-
-        width: 90vw;
-    }
+    
 }

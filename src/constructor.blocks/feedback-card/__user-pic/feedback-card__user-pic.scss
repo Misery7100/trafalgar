@@ -1,9 +1,12 @@
 .feedback-card__user-pic {
     
     display: flex;
-    width: calc(0.4 * 25vw);
+    // height: calc(0.4 * 25vw);
+    // width: calc(0.4 * 25vw);
     user-select: none;
     padding: var(--space-xxs);
+
+
     // border-radius: 50%;
     // box-shadow: inset 0 0 10px #FFFFFF;
 
@@ -11,7 +14,10 @@
 
         border-radius: 50%;
         box-shadow: 0 0 0 0.25em #FFFFFF;
-        width: 100%;
+        height: calc(0.4 * 25vw);
+        width: calc(0.4 * 25vw);
+        object-fit: cover;
+
     }
 }
 
@@ -20,5 +26,13 @@
     .feedback-card__user-pic {
 
         width: calc(0.8 * 35vw);
+        height: calc(0.8 * 35vw);
+
+        img {
+
+            width: calc(0.8 * 35vw);
+            height: calc(0.8 * 35vw);
+
+        }
     }
 }

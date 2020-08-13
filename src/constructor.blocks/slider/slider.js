@@ -5,13 +5,16 @@ let btnPrev = document.querySelector('button.slider__prev');
 let slider = document.querySelector("ul.testimonials__slides");
 let dots = document.querySelector('div.slider__dots');
 
+//----------------------------------------------------------//
+
 const num = slider.childNodes.length;
 
-var slideWidth = 70;
 let viewSlide = 0;
 
 let dotActive = 'slider__dots-item--active';
 let dotClass = 'slider__dots-item';
+
+let slideDirection = ['testimonials__slides--slide-forward','testimonials__slides--slide-backward'];
 
 let isClicked = false;
 let avoidDoubleClick = false;
@@ -31,37 +34,19 @@ for (let i = 0; i < num; i++) {
 
 var nextSlide = () => {
 
-    if (viewSlide < num - 1) { // Если верно то
-        // Увеличиваем номер слайда на один
-        viewSlide++;
-
-    } else { // Иначе
-        // Номер слайда равен нулю
-        viewSlide = 0;
-    }
+    if (viewSlide < num - 1) { viewSlide++; } 
+    
+    else { viewSlide = 0; }
 };
 
 var prevSlide = () => {
 
-    if (viewSlide > 0) { // Если верно то
-        // Уменьшаем номер слайда
-        viewSlide--; 
-    } else { // Иначе
-        // Номер слайда равен четырём
-        viewSlide = num - 1; 
-    }
+    if (viewSlide > 0) { viewSlide--; } 
+
+    else { viewSlide = num - 1; }
 };
 
-var checkWidth = () => {
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-
-    if (width > height) {slideWidth = 70;}
-    else {slideWidth = 90;}
-
-    return slideWidth;
-};
 
 /* =================================================================== */
 
@@ -77,20 +62,18 @@ var toggleDots = (viewSlide) => {
 
 var slideCards = direction => {
 
-    if (avoidDoubleClick || (Math.abs(direction)!= 1)) {return}
+    if (avoidDoubleClick || ((direction != 1) && (direction != 0))) {return}
 
     toggleDots(viewSlide);
+
     let cards = document.querySelectorAll('li.test-slides');
     let classes = slider.classList;
     let movedCard;
     let index;
 
-    
-    checkWidth();
-
     switch (direction) {
 
-        case 1:
+        case 0:
 
             nextSlide();
             console.log(viewSlide);
@@ -100,7 +83,7 @@ var slideCards = direction => {
             movedCard = cards[index].cloneNode(deep = true);
             break
             
-        case -1:
+        case 1:
 
             prevSlide();
             console.log('?????');
@@ -112,20 +95,22 @@ var slideCards = direction => {
 
     }
 
-
-    slider.style.left = -(slideWidth) * (1 + direction) + "vw";
+    
+    classes.toggle(slideDirection[direction]);
+    // slider.style.left = -(slideWidth) * (1 + direction) + "vw";
 
     avoidDoubleClick = true;
 
     setTimeout(() => {
 
-        if (direction == 1) {slider.appendChild(movedCard);}
+        if (direction == 0) {slider.appendChild(movedCard);}
         else {slider.insertBefore(movedCard, cards[0]);}
         
         slider.removeChild(cards[index]);
 
         classes.add('remove-animation');
-        slider.style.left = -(slideWidth) + "vw";
+        classes.toggle(slideDirection[direction]);
+        // slider.style.left = -(slideWidth) + "vw";
         avoidDoubleClick = false;
         
     }, 400);
@@ -139,7 +124,7 @@ var slideCards = direction => {
 
 var scroll = setInterval(() => {
 
-    slideCards(1);
+    slideCards(0);
 
     // if (avoidDoubleClick) {return}
     
@@ -179,7 +164,7 @@ btnNext.addEventListener("click", () => {
 
     isClicked = true; 
     clearInterval(scroll); 
-    slideCards(1);
+    slideCards(0);
 });
  
 
@@ -187,7 +172,7 @@ btnPrev.addEventListener("click", () => {
 
     isClicked = true; 
     clearInterval(scroll); 
-    slideCards(-1);
+    slideCards(1);
 });
 
 

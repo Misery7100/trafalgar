@@ -40,7 +40,10 @@
 @import '../constructor.blocks/testimonials/testimonials.scss';
 @import '../constructor.blocks/testimonials/__box/testimonials__box.scss';
 @import '../constructor.blocks/testimonials/__slides/testimonials__slides.scss';
+@import '../constructor.blocks/testimonials/__slides/--slide-forward/testimonials__slides--slide-forward.scss';
+@import '../constructor.blocks/testimonials/__slides/--slide-backward/testimonials__slides--slide-backward.scss';
 @import '../constructor.blocks/testimonials/__hider/testimonials__hider.scss';
+@import '../constructor.blocks/testimonials/__slide/testimonials__slide.scss';
 
 @import '../constructor.blocks/feedback-card/feedback-card.scss';
 @import '../constructor.blocks/feedback-card/__box/feedback-card__box.scss';
@@ -55,6 +58,8 @@
 @import '../constructor.blocks/slider/__dots-item/slider__dots-item.scss';
 @import '../constructor.blocks/slider/__dots-item/--active/slider__dots-item--active.scss';
 @import '../constructor.blocks/slider/__next/slider__next.scss';
+@import '../constructor.blocks/slider/__next/--internal/slider__next--internal.scss';
 @import '../constructor.blocks/slider/__prev/slider__prev.scss';
+@import '../constructor.blocks/slider/__prev/--internal/slider__prev--internal.scss';
 
 @import './patterns.scss';

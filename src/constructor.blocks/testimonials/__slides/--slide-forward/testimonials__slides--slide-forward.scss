@@ -1,0 +1,12 @@
+.testimonials__slides--slide-forward {
+    
+    left: -140vw;
+}
+
+@media (orientation: portrait) {
+
+    .testimonials__slides--slide-forward {
+
+        left: -180vw;
+    }
+}

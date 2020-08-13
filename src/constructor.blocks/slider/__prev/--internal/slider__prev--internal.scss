@@ -1,0 +1,38 @@
+.slider__prev--internal {
+    
+    display: none;
+    height: 4em;
+    margin-left: var(--space-xs);
+    margin-right: 0;
+    padding: var(--space-xxs);
+
+    filter: brightness(0.7);
+    opacity: 0.8;
+
+    img {
+
+        max-width: 100%;
+    }
+
+    &:hover {
+
+        filter: brightness(0.5);
+    }
+}
+
+@media (orientation: portrait) {
+
+    .slider__prev--internal {
+
+        display: flex;
+    }
+
+}
+
+// @media (orientation: landscape) {
+
+//     .slider__prev--internal {
+
+//         display: none;
+//     }
+// }
