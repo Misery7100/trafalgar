@@ -25,6 +25,7 @@ class Slider {
     static DOT_PASSIVE = 'slider__dots-item';
     static DOT_TAG = 'span';
     static SLIDE_SELECTOR = 'li.testimonials__slide';
+    static UNANIMATED = 'remove-animation';
 
     static BUTTON_NEXT = 'button.slider__next';
     static BUTTON_PREV = 'button.slider__prev';
@@ -65,13 +66,13 @@ class Slider {
 
     addDots() {
 
-        let firstSpan = document.createElement('span');
+        let firstSpan = document.createElement(Slider.DOT_TAG);
         firstSpan.className = Slider.DOT_PASSIVE + ' ' + Slider.DOT_ACTIVE;
         this.dotsContainer.appendChild(firstSpan);
 
         for (let i = 1; i < this.slidesNum; i++) {
 
-            let span = document.createElement('span');
+            let span = document.createElement(Slider.DOT_TAG);
             span.className = Slider.DOT_PASSIVE;
             this.dotsContainer.appendChild(span);
         }
@@ -144,14 +145,14 @@ class Slider {
             
             this.slider.removeChild(cardsMassive[insertCard.index]);
 
-            this.sliderClasses.add('remove-animation');
+            this.sliderClasses.add(Slider.UNANIMATED);
             this.sliderClasses.toggle(Slider.DIRECTION[dir]);
 
             this.avoidDoubleClick = false;
             
         }, 400);
 
-        setTimeout(() => {this.sliderClasses.remove('remove-animation')}, 450);
+        setTimeout(() => {this.sliderClasses.remove(Slider.UNANIMATED)}, 450);
     }
 
 
